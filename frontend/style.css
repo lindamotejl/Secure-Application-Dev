@@ -32,6 +32,7 @@
     text-shadow: 6px 5px 22px #000000;
 
 }
+
 .search {
 position: absolute;
 left: 30%;
@@ -41,6 +42,132 @@ bottom: 17.5%;
 
 background: rgba(238, 238, 238, 0.9);
 opacity: 0.8;
-  }
+}
+
+#hamburger {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 99;
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+#hamburger span{
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: rgb(243, 91, 3);
+    border-radius: 9px;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+#hamburger span:nth-child(1) {
+    top: 0;
+}
+
+#hamburger span:nth-child(2),
+#hamburger span:nth-child(3) {
+    top: 18px;
+}
+
+#hamburger span:nth-child(4) {
+    top: 36px;
+}
+
+#hamburger.open span:nth-child(1),
+#hamburger.open span:nth-child(4){
+    width: 0%;
+    top: 18px;
+    left: 50%;
+}
+
+#hamburger.open span:nth-child(2){
+    transform: rotate(45deg);
+}
+
+#hamburger.open span:nth-child(3){
+    transform: rotate(-45deg);
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    display: none;
+}
+
+nav.show {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #bbb;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+#login, #signup {
+    height: 42px;
+    position: absolute;
+    top: 1rem;
+    right: 4.8rem;
+    z-index: 99;
+}
+
+#login {
+    right: 10.5rem;
+}
+
+#login a {
+    display: block;
+    line-height: 42px;
+    padding: 0 12px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border: 1px solid  rgba(238, 238, 238, 0.9);
+    border-radius: 4px;
+}
+
+#signup a {
+    display: block;
+    line-height: 42px;
+    padding: 0 12px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border: 1px solid rgb(243, 91, 3);
+    border-radius: 4px;
+}
 
 
