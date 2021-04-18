@@ -44,6 +44,22 @@ background: rgba(238, 238, 238, 0.9);
 opacity: 0.8;
 }
 
+#about{
+    height: 200px;
+    width: 100%;
+    background-color: powderblue;
+}
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+    text-align: left;
+    
+  }
+
 #hamburger {
     width: 60px;
     height: 45px;

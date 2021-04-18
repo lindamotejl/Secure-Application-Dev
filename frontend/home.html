@@ -13,7 +13,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="jquery.smooth-scroll.min.js"></script>
     <script src="foodle.js"></script>
-    
+    <!-- UIkit CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+
+   <!-- UIkit JS -->
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
 </head>
 
 
@@ -47,27 +52,30 @@
             <section id="web">
                <div class="logo">
                   <a href="index.html"><img src="media/logo.png"></a>
-               </div> -->
+               </div> 
 
             </section>
             <section id="hero">
                <img src="media/restaurant.jpg" class="background" alt="Background image">
                <div class="slogan">GOOD FOOD STARTS HERE</div>
-               <div class="search"></div>
+               <div class="uk-margin">
+                  <form class="uk-search uk-search-default">
+                     <span uk-search-icon></span>
+                     <input class="uk-search-input" type="search" placeholder="What are you craving?">
+                  </form>
+               </div>
+   
             </section>
             <section id="about">
-               <article class="one"> 
-                  <div class="row">
-                     <div class="column">
-                        <div class="logo">
-                         <img src="media/logo.png">
-                        </div>
-                     </div>
-                     <div class="column">
-                        <p>We help you find the perfect restaurant for you next breakfast, lunch or dinner. Thanks to our advanced filtering systems and smart AI system, you will have no problems choosing your next meal.</p>
-                     </div>
+               <div class="row">
+                  <div class="column">
+                     <img src="media/logo.png">
                   </div>
-               </article>
+                  <div class="column">
+                     <h1>About</h1>
+                     <p>We help you find the perfect restaurant for you next breakfast, lunch or dinner. Thanks to our advanced filtering systems and smart AI system, you will have no problems choosing your next meal.</p>
+                  </div>
+               </div>
                
             </section>
       </div>
