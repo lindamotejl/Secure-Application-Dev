@@ -1,6 +1,6 @@
 ---
 name: Bug Template
-about: Please follow this template when reporting a bug.
+about: Please follow this template when reporting a bug
 title: "[BUG]"
 labels: ''
 assignees: ''

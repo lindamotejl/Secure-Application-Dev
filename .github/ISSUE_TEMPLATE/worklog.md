@@ -1,5 +1,5 @@
 ---
-name: Worklog
+name: Worklog Template
 about: Record all work completed here
 title: "[WORK LOG]"
 labels: ''

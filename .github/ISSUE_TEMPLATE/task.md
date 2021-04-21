@@ -1,6 +1,6 @@
 ---
-name: Task
-about: Tasks to be specified here
+name: Task Template
+about: Specify general tasks using this template
 title: "[TASK]"
 labels: ''
 assignees: ''
@@ -10,6 +10,7 @@ assignees: ''
 <!--- Provide a general summary of the issue in the Title above -->
 
 ## Detailed Description of task
+<!--- Provide a detailed description of the task -->
 
 ## Context
 <!--- Why is this important? -->
