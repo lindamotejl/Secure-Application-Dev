@@ -60,6 +60,9 @@ opacity: 0.8;
     
   }
 
+.column img{
+    color: aqua;
+}
 #hamburger {
     width: 60px;
     height: 45px;
