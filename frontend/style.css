@@ -45,9 +45,10 @@ opacity: 0.8;
 }
 
 #about{
-    height: 200px;
+    height: 250px;
     width: 100%;
-    background-color: powderblue;
+    background-color: pink;
+    padding: 5%;
 }
 
 .row {
@@ -55,14 +56,17 @@ opacity: 0.8;
   }
   
 .column {
+
     flex: 50%;
     text-align: left;
     
   }
 
-.column img{
-    color: aqua;
-}
+  .centerlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 #hamburger {
     width: 60px;
     height: 45px;
@@ -188,4 +192,69 @@ nav a:hover {
     border-radius: 4px;
 }
 
+#flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.footer {
+	position: absolute;
+	width: 100%;
+	background-color: #F0F0F0;
+	color: black;
+	bottom: 0;
+	width: 100%;
+	height: 12rem;
+}
+.text {
+	color: black;
+	padding: 5vh;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+}
 
+#social {
+	text-align: center;
+	padding-top: 5vh;
+	padding-right: 5vh;
+	float: right;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 3px;
+}
+
+@media (max-width: 550px) {}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-youtube {
+	background: #bb0000;
+	color: white;
+}
+
+.fa-instagram {
+	background: #833AB4;
+	color: white;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
