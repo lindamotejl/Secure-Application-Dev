@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-* {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@500&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');* {
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
@@ -47,7 +49,7 @@ opacity: 0.8;
 #about{
     height: 250px;
     width: 100%;
-    background-color: pink;
+    background-color: white;
     padding: 5%;
 }
 
@@ -59,9 +61,29 @@ opacity: 0.8;
 
     flex: 50%;
     text-align: left;
+
+
     
   }
 
+.column h1{
+    font-family: Raleway;
+	font-style: normal;
+	color: black;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 24px;
+    text-transform: uppercase;
+}
+
+.column p{
+    font-family:Bitter;
+	font-style: normal;
+	color: black;
+	letter-spacing: 0px;
+	font-weight: 500;
+	font-size: 20px;
+}
   .centerlogo {
     display: block;
     margin-left: auto;
@@ -192,29 +214,42 @@ nav a:hover {
     border-radius: 4px;
 }
 
+#recommended{
+    padding: 6%;
+    background-color: #EDECEC;
+    min-height: 100vh;
+}
+
+.title h2{
+    text-align: center;
+}
+
 #flex-wrapper {
     display: flex;
-    min-height: 100vh;
+    min-height: 0vh;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #EEEEEE;
+
   }
+.red{
+    color: #DD4815;
+}
 .footer {
 	position: absolute;
 	width: 100%;
-	background-color: #F0F0F0;
-	color: black;
 	bottom: 0;
 	width: 100%;
 	height: 12rem;
 }
 .text {
-	color: black;
-	padding: 5vh;
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 19px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 5vh;
+    color: #000000;
 }
 
 #social {
@@ -227,7 +262,7 @@ nav a:hover {
 .fa {
 	padding: 20px;
 	font-size: 30px;
-	width: 50px;
+	width: 55px;
 	text-align: center;
 	text-decoration: none;
 	margin: 3px;
@@ -255,6 +290,6 @@ nav a:hover {
 }
 
 .fa-twitter {
-	background: #55ACEE;
-	color: white;
+	background: #white;
+	color: black;
 }
