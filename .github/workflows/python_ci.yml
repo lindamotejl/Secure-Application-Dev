@@ -8,9 +8,9 @@ on:
   # to run on all branches `on: [push, pull_request]`
   # otherwise can also exclude a branch: - '!master'
   push:
-    branches: [ master ]
+    branches: [ dev ]
   pull_request:
-    branches: [ master, frontend, backend ]
+    branches: [ main, dev ]
 
 jobs:
   build:
