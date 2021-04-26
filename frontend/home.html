@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- About the Page -->
+      <!-- This line is needed for special characters -->
+      <meta charset="utf-8">
+      <!-- This line is needed for platform compatibility -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Foodle</title>
+      <!-- HTML attributes link for css, script for js -->
+      <link rel="stylesheet" href="style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="jquery.smooth-scroll.min.js"></script>
+      <script src="foodle.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- UIkit CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+      <!-- UIkit JS -->
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
+   </head>
+   <div id="page-container">
+      <div id="content-wrap">
+         <body>
+            <div id="login">
+               <a href="#">Login</a>
+            </div>
+            <div id="signup">
+               <a href="#">Signup</a>
+            </div>
+            <div id="hamburger">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>  
+            </div>
+            <nav>
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Today's Recommendations</a></li>
+                  <li><a href="#">Contact</a></li>
+               </ul>
+            </nav>
+            <section id="web">
+               <div class="logo">
+                  <!--a href="index.html"><img src="media/logo.png"></a-->
+               </div>
+            </section>
+            <section id="hero">
+               <img src="media/restaurant.jpg" class="background" alt="Background image">
+               <div class="slogan">GOOD FOOD STARTS HERE</div>
+               <div class="uk-margin">
+                  <form class="uk-search uk-search-default">
+                     <span uk-search-icon></span>
+                     <input class="uk-search-input" type="search" placeholder="What are you craving?">
+                  </form>
+               </div>
+            </section>
+            <section id="about">
+               <div class="row">
+                  <div class="column">
+                     <img src="media/resized.png" alt="logo" class="centerlogo">
+                  </div>
+                  <div class="column">
+                     <h1>About Us</h1>
+                     <p>We help you find the perfect restaurant for you next breakfast, lunch or dinner. Thanks to our advanced filtering systems and smart AI system, you will have no problems choosing your next meal.</p>
+                  </div>
+               </div>
+            </section>
+            <section id="recommended">
+               <div class="title">
+               <div class="border">
+               <h2>Today's Recommendations</h2>
+               </div>
+               </div>
+            <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="media/pizza.jpg" alt="food">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+                </div>
+    <div>
+     <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="media/pizza.jpg" alt="food">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+        </div>
+
+    <div>
+       <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="media/pizza.jpg" alt="food">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+                   <div class="title">
+               <h2>My Favourites</h2>
+               <div class="border"></div>
+               </div>
+            <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="media/pizza.jpg" alt="food">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+                </div>
+    <div>
+     <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="media/pizza.jpg" alt="food">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+        </div>
+
+    <div>
+       <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="media/pizza.jpg" alt="food">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+            </section>
+
+            <section id="flex-wrapper">
+               <footer id="footer">
+                  <div id="social">
+                     <a href="https://www.youtube.com/channel/UCisjUBoTxvkkbd8nW5eM6UQ" class="fa fa-youtube"></a>
+                     <a href="https://www.instagram.com/talkingthroughart/" class="fa fa-instagram"></a>
+                     <a href="https://www.facebook.com/talkingthroughart" class="fa fa-facebook"></a>
+                     <a href="https://twitter.com/NgoTalking" class="fa fa-twitter"></a>
+                  </div>
+                  <div class="text">
+                     <p>FOODLE
+                     <p>
+                     <p>Prague, Czech Republic <br>
+                        120 00 <br>
+                        +420 600 700 800 <br>
+                        <br><br><span class="red">info@foodle.com</span>
+                     </p>
+                  </div>
+               </footer>
+            </section>
+      </div>
+   </div>
+   </body>
+</html>
