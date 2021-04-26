@@ -1,3 +1,12 @@
+---
+name: Feature Request Template
+about: Suggest an idea for this project
+title: "[FEATURE]"
+labels: ''
+assignees: ''
+
+---
+
 <!--- Provide a general summary of the issue in the Title above -->
 
 ## Detailed Description

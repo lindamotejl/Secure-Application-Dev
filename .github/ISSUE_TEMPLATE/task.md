@@ -1,7 +1,7 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: "[FEATURE]"
+name: Task Template
+about: Specify general tasks using this template
+title: "[TASK]"
 labels: ''
 assignees: ''
 
@@ -9,12 +9,11 @@ assignees: ''
 
 <!--- Provide a general summary of the issue in the Title above -->
 
-## Detailed Description
-<!--- Provide a detailed description of the change or addition you are proposing -->
+## Detailed Description of task
+<!--- Provide a detailed description of the task -->
 
 ## Context
-<!--- Why is this change important to you? How would you use it? -->
-<!--- How can it benefit other users? -->
+<!--- Why is this important? -->
 
 ## Possible Implementation
 <!--- Not obligatory, but suggest an idea for implementing addition or change -->
@@ -24,3 +23,5 @@ assignees: ''
 - [ ] Task 1
 - [ ] Task 2
 - [ ] Task 3
+- [ ] Task 4
+- [ ] Task 5
