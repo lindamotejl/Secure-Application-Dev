@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="page-container">
+	<div id="content-wrap">
+		<section id="web">
+			<div class="logo">
+			<!--a href="index.html"><img src="img/logo.png"></a-->
+			</div>
+		</section>
+		<section id="hero">
+			<img src="{% static 'img/restaurant.jpg' %}" class="background" alt="Background image">
+			<div class="slogan">GOOD FOOD STARTS HERE</div>
+			<div class="uk-margin">
+				<form class="uk-search uk-search-default">
+					<span uk-search-icon></span>
+					<input class="uk-search-input" type="search" placeholder="What are you craving?">
+				</form>
+			</div>
+		</section>
+		<section id="about">
+			<div class="row">
+				<div class="column">
+					<img src="{% static 'img/resized.png' %}" alt="logo" class="centerlogo">
+				</div>
+				<div class="column">
+					<h1>About Us</h1>
+					<p>We help you find the perfect restaurant for you next breakfast, lunch or dinner. Thanks to our advanced filtering systems and smart AI system, you will have no problems choosing your next meal.</p>
+				</div>
+			</div>
+		</section>
+		<section id="recommended">
+			<div class="title">
+				<div class="border">
+					<h2>Today's Recommendations</h2>
+				</div>
+			</div>
+			<div class="uk-child-width-expand@s uk-text-center" uk-grid>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<img src="{% static 'img/pizza.jpg' %}" alt="food">
+						</div>
+						<div class="uk-card-body">
+							<h3 class="uk-card-title">Media Top</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<img src="{% static 'img/pizza.jpg' %}" alt="food">
+						</div>
+						<div class="uk-card-body">
+							<h3 class="uk-card-title">Media Top</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<img src="{% static 'img/pizza.jpg' %}" alt="food">
+						</div>
+						<div class="uk-card-body">
+							<h3 class="uk-card-title">Media Top</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="title">
+				<div class="border">
+					<h2>My Favorites</h2>
+				</div>
+			</div>
+			<div class="uk-child-width-expand@s uk-text-center" uk-grid>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<img src="{% static 'img/pizza.jpg' %}" alt="food">
+						</div>
+						<div class="uk-card-body">
+							<h3 class="uk-card-title">Media Top</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<img src="{% static 'img/pizza.jpg' %}" alt="food">
+						</div>
+						<div class="uk-card-body">
+							<h3 class="uk-card-title">Media Top</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<img src="{% static 'img/pizza.jpg' %}" alt="food">
+						</div>
+						<div class="uk-card-body">
+							<h3 class="uk-card-title">Media Top</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+{% endblock %}
