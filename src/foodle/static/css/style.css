@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+#hero {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	z-index: -1;
+}
+
+.slogan {
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	color: #fefefe;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 34px;
+	mix-blend-mode: normal;
+    text-shadow: 6px 5px 22px #000000;
+
+}
+
+.search {
+position: absolute;
+left: 30%;
+right: 30%;
+top: 76%;
+bottom: 17.5%;
+
+background: rgba(238, 238, 238, 0.9);
+opacity: 0.8;
+}
+
+#about{
+    height: 300px;
+    width: 100%;
+    background-color: white;
+    padding: 5%;
+}
+
+.row {
+    display: flex;
+  }
+  
+.column {
+
+    flex: 50%;
+    text-align: left;
+
+
+    
+  }
+
+.column h1{
+    font-family: Alata;
+	font-style: normal;
+    font-weight: 400;
+	color: black;
+	letter-spacing: 2px;
+	font-size: 28px;
+    text-transform: capitalize;
+}
+
+.column p{
+    font-family:Bitter;
+	font-style: normal;
+	color: black;
+	letter-spacing: 0px;
+	font-weight: 500;
+	font-size: 20px;
+}
+  .centerlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+#hamburger {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 99;
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+#hamburger span{
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: rgb(243, 91, 3);
+    border-radius: 9px;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+#hamburger span:nth-child(1) {
+    top: 0;
+}
+
+#hamburger span:nth-child(2),
+#hamburger span:nth-child(3) {
+    top: 18px;
+}
+
+#hamburger span:nth-child(4) {
+    top: 36px;
+}
+
+#hamburger.open span:nth-child(1),
+#hamburger.open span:nth-child(4){
+    width: 0%;
+    top: 18px;
+    left: 50%;
+}
+
+#hamburger.open span:nth-child(2){
+    transform: rotate(45deg);
+}
+
+#hamburger.open span:nth-child(3){
+    transform: rotate(-45deg);
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    display: none;
+}
+
+nav.show {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #bbb;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+#login, #signup {
+    height: 42px;
+    position: absolute;
+    top: 1rem;
+    right: 4.8rem;
+    z-index: 99;
+}
+
+#login {
+    right: 10.5rem;
+}
+
+#login a {
+    display: block;
+    line-height: 42px;
+    padding: 0 12px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+#signup a {
+    display: block;
+    line-height: 42px;
+    padding: 0 12px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border: 1px solid #f35b03;
+    border-radius: 4px;
+}
+
+#recommended{
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 6%;
+
+    background-color: #EDECEC;
+    min-height: 100vh;
+}
+
+.title h2{
+    text-align: center;
+    font-family: Alata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: #000000;
+    letter-spacing: 1px;
+    padding-top: 6%;
+    
+}
+    
+.border{
+    border-bottom: 3.5px solid #DD4815; /* This creates the border. Replace black with whatever color you want. */
+    max-width: 50x;
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    }
+
+#flex-wrapper {
+    display: flex;
+    min-height: 0vh;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #EEEEEE;
+
+  }
+.red{
+    color: #DD4815;
+}
+.footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	width: 100%;
+	height: 12rem;
+}
+.text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 5vh;
+    color: #000000;
+}
+
+#social {
+	text-align: center;
+	padding-top: 5vh;
+	padding-right: 5vh;
+	float: right;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 55px;
+	text-align: center;
+	text-decoration: none;
+	margin: 3px;
+}
+
+@media (max-width: 550px) {}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-youtube {
+	background: #bb0000;
+	color: white;
+}
+
+.fa-instagram {
+	background: #833AB4;
+	color: white;
+}
+
+.fa-twitter {
+	background: #white;
+	color: black;
+}

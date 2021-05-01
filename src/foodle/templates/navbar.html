@@ -1,0 +1,26 @@
+{% load socialaccount %}
+<div id="login">
+   {% if user.is_authenticated %}
+   <p>Welcome, {{ user.username }} !</p>
+  
+   {% else %}
+   <a href="{% provider_login_url 'google' %}">Login with Google</a>
+   {% endif %}
+ </div>
+ <div id="signup">
+    <a href="#">Signup</a>
+ </div>
+ <div id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>  
+ </div>
+ <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Today's Recommendations</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+ </nav>
