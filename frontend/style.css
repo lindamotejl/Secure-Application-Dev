@@ -10,15 +10,22 @@
 }
 
 #hero {
-	height: 100vh;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
+	z-index: -1;
 	justify-content: center;
+    display: flex;
+    overflow: hidden;
+	flex-direction: column;
+    position: relative;
+	height: 100vh;
+
+
+
+
+}
+.background{
 	padding-left: 2.5%;
 	padding-right: 2.5%;
-	z-index: -1;
-    position: relative;
+    
 
 }
 
@@ -35,6 +42,7 @@
 	font-size: 34px;
 	mix-blend-mode: normal;
     text-shadow: 6px 5px 22px #000000;
+    z-index: 980;
 
 }
 
@@ -50,7 +58,7 @@ opacity: 0.8;
 }
 
 #about{
-    height: 230px;
+    height: 200px;
     width: 100%;
     background-color: white;
     padding: 3%;
@@ -306,21 +314,17 @@ nav a:hover {
 }
 
 .fa-facebook {
-	background: #3B5998;
-	color: white;
+	color: black;
 }
 
 .fa-youtube {
-	background: #bb0000;
-	color: white;
+	color: black;
 }
 
 .fa-instagram {
-	background: #833AB4;
-	color: white;
+	color: black;
 }
 
 .fa-twitter {
-	background: #white;
 	color: black;
 }
