@@ -1,0 +1,1 @@
+web: gunicorn foodle.wsgi --log-file -

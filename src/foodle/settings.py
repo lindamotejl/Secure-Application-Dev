@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import urllib
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -86,6 +88,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'foodle',
+        'CLIENT': {
+            'host': "mongodb+srv://db_connector:" + urllib.parse.quote_plus('Nl9wcMwKUFgpJC5F') + "@foodle-cluster.vgsnp.mongodb.net/test?retryWrites=true&w=majority"
+        }, 
     }
 }
 
@@ -127,9 +132,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = Path(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = Path(BASE_DIR, '/static/img/')
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
 
 # Django Allauth settings
 AUTHENTICATION_BACKENDS = (
