@@ -10,15 +10,23 @@
 }
 
 #hero {
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-	display: flex;
-	flex-direction: column;
+	z-index: -1;
 	justify-content: center;
+    display: flex;
+    overflow: hidden;
+	flex-direction: column;
+    position: relative;
+	height: 100vh;
+
+
+
+
+}
+.background{
 	padding-left: 2.5%;
 	padding-right: 2.5%;
-	z-index: -1;
+    
+
 }
 
 .slogan {
@@ -34,6 +42,7 @@
 	font-size: 34px;
 	mix-blend-mode: normal;
     text-shadow: 6px 5px 22px #000000;
+    z-index: 980;
 
 }
 
@@ -49,10 +58,11 @@ opacity: 0.8;
 }
 
 #about{
-    height: 300px;
+    height: 200px;
     width: 100%;
     background-color: white;
-    padding: 5%;
+    padding: 3%;
+  
 }
 
 .row {
@@ -84,12 +94,13 @@ opacity: 0.8;
 	color: black;
 	letter-spacing: 0px;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 15px;
 }
   .centerlogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 4%;
   }
 #hamburger {
     width: 60px;
@@ -233,17 +244,26 @@ nav a:hover {
     font-size: 28px;
     color: #000000;
     letter-spacing: 1px;
-    padding-top: 6%;
+    padding-top: 4%;
     
 }
     
 .border{
     border-bottom: 3.5px solid #DD4815; /* This creates the border. Replace black with whatever color you want. */
-    max-width: 50x;
-    display: block; /* This will put the pseudo element on its own line. */
+    max-width: 35%;
     margin: 0 auto; /* This will center the border. */
+    padding: 0%;
     }
 
+.border2{
+    border-bottom: 3.5px solid #DD4815; /* This creates the border. Replace black with whatever color you want. */
+    max-width: 23%;
+    margin: 0 auto; /* This will center the border. */
+    padding: 0%;
+    }
+.space{
+    padding: 3%;
+}
 #flex-wrapper {
     display: flex;
     min-height: 0vh;
@@ -258,8 +278,6 @@ nav a:hover {
 .footer {
 	position: absolute;
 	width: 100%;
-	bottom: 0;
-	width: 100%;
 	height: 12rem;
 }
 .text {
@@ -268,7 +286,8 @@ nav a:hover {
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
-    padding: 5vh;
+    padding-top: 5vh;
+    padding-left:5vh;
     color: #000000;
 }
 
@@ -295,21 +314,17 @@ nav a:hover {
 }
 
 .fa-facebook {
-	background: #3B5998;
-	color: white;
+	color: black;
 }
 
 .fa-youtube {
-	background: #bb0000;
-	color: white;
+	color: black;
 }
 
 .fa-instagram {
-	background: #833AB4;
-	color: white;
+	color: black;
 }
 
 .fa-twitter {
-	background: #white;
 	color: black;
 }
