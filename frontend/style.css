@@ -53,7 +53,7 @@ right: 30%;
 top: 76%;
 bottom: 17.5%;
 
-background: rgba(238, 238, 238, 0.9);
+background: rgba(5, 5, 5, 0.9);
 opacity: 0.8;
 }
 
@@ -118,7 +118,7 @@ opacity: 0.8;
     position: absolute;
     height: 9px;
     width: 100%;
-    background: rgb(243, 91, 3);
+    background: rgb(0, 0, 0);
     border-radius: 9px;
     left: 0;
     transform: rotate(0deg);
@@ -159,7 +159,7 @@ nav {
     height: 100vh;
     overflow: hidden;
     z-index: 50;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(110, 109, 109, 0.9);
     user-select: none;
     display: none;
 }

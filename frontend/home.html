@@ -22,26 +22,41 @@
    <div id="page-container">
       <div id="content-wrap">
          <body>
-            <div id="login">
-               <a href="#">Login</a>
-            </div>
-            <div id="signup">
-               <a href="#">Signup</a>
-            </div>
-            <div id="hamburger">
-               <span></span>
-               <span></span>
-               <span></span>
-               <span></span>  
-            </div>
-            <nav>
-               <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Today's Recommendations</a></li>
-                  <li><a href="#">Contact</a></li>
-               </ul>
+            <nav class="uk-navbar-container" uk-navbar>
+
+               <div class="uk-navbar-left">
+           
+                  <div id="hamburger">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>  
+                  </div>
+                  <nav>
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Today's Recommendations</a></li>
+                        <li><a href="#">Contact</a></li>
+                     </ul>
+                  </nav>
+           
+               </div>
+           
+               <div class="uk-navbar-right">
+           
+                  <div id="login">
+                     <a href="#">Login</a>
+                  </div>
+                  <div id="signup">
+                     <a href="#">Signup</a>
+                  </div>
+           
+               </div>
+           
             </nav>
+            
+
             <section id="web">
                <div class="logo">
                   <!--a href="index.html"><img src="media/logo.png"></a-->
@@ -58,7 +73,7 @@
                   <input class="uk-search-input" type="search" placeholder="What are you craving?" style="color: black;">
                </form>
             </div>
-            </secton>
+            </section>
       </div>
       <section id="about">
       <div class="row">
