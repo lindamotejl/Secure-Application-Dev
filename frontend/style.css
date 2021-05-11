@@ -16,7 +16,7 @@
     overflow: hidden;
 	flex-direction: column;
     position: relative;
-	height: 100vh;
+	height: 90vh;
 
 
 
@@ -36,7 +36,7 @@
 	text-align: center;
 	font-family: Montserrat;
 	font-style: normal;
-	color: #fefefe;
+	color: #ffffff;
 	letter-spacing: 1px;
 	font-weight: 500;
 	font-size: 34px;
@@ -73,8 +73,6 @@ opacity: 0.8;
 
     flex: 50%;
     text-align: left;
-
-
     
   }
 
@@ -102,12 +100,19 @@ opacity: 0.8;
     margin-right: auto;
     padding-bottom: 4%;
   }
+#navigation{
+    height:50px;
+    width: 1920px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  6px 5px 22px #00000050;;
+    
+}
 #hamburger {
     width: 60px;
-    height: 45px;
+    height: 15px;
     position: absolute;
     top: 1rem;
-    left: 1rem;
+    left: 4rem;
     z-index: 99;
     cursor: pointer;
     transform: scale(0.8);
@@ -116,10 +121,10 @@ opacity: 0.8;
 #hamburger span{
     display: block;
     position: absolute;
-    height: 9px;
+    height: 4px;
     width: 100%;
     background: rgb(0, 0, 0);
-    border-radius: 9px;
+    border-radius: 0px;
     left: 0;
     transform: rotate(0deg);
     transition: .25s ease-in-out;
@@ -152,7 +157,11 @@ opacity: 0.8;
 #hamburger.open span:nth-child(3){
     transform: rotate(-45deg);
 }
-
+#navigationbar{
+    height: 50%;
+    width: 1080px;
+    background-color: blueviolet;
+}
 nav {
     position: absolute;
     width: 100%;
