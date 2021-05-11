@@ -22,10 +22,10 @@
    <body>
    <div id="page-container">
       <div id="content-wrap">
-         
-            <nav class="uk-navbar-container" uk-navbar>
 
-               <div class="uk-navbar-left">
+            <div uk-sticky .uk-position-z-index>
+
+<section id="navigation">
            
                   <div id="hamburger">
                      <span></span>
@@ -42,41 +42,35 @@
                      </ul>
                   </nav>
            
-               </div>
-           
-               <div class="uk-navbar-right">
-           
                   <div id="login">
                      <a href="#">Login</a>
                   </div>
                   <div id="signup">
                      <a href="#">Signup</a>
                   </div>
-           
                </div>
-           
-            </nav>
-            
 
+                  
+           </section>
+</div>
             <section id="web">
-               <div class="logo">
-                  <!--a href="index.html"><img src="media/logo.png"></a-->
-               </div>
+        
             </section>
             <section id="hero">
             <div uk-sticky .uk-position-z-index>
                <img src="media/restaurant.jpg" class="background" alt="Background image">
-            </div>
             <div class="slogan">GOOD FOOD STARTS HERE</div>
+                                       </section>
+
             
-            </section>
+
             <div class="uk-margin-medium">
                <form class="uk-search uk-search-default uk-width-medium uk-align-center">
                   <a class="uk-search-toggle" href="" uk-search-icon style="color: black;"></a>
                   <input class="uk-search-input" type="search" placeholder="What are you craving?" style="color: black;">
                </form>
             </div>
-      </div>
+
       <section id="about">
       <div class="row">
       <div class="column">
