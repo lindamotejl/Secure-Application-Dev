@@ -16,7 +16,7 @@
     overflow: hidden;
 	flex-direction: column;
     position: relative;
-	height: 90vh;
+	height: 100vh;
 
 
 
@@ -36,7 +36,7 @@
 	text-align: center;
 	font-family: Montserrat;
 	font-style: normal;
-	color: #ffffff;
+	color: #fefefe;
 	letter-spacing: 1px;
 	font-weight: 500;
 	font-size: 34px;
@@ -53,7 +53,7 @@ right: 30%;
 top: 76%;
 bottom: 17.5%;
 
-background: rgba(5, 5, 5, 0.9);
+background: rgba(238, 238, 238, 0.9);
 opacity: 0.8;
 }
 
@@ -73,6 +73,8 @@ opacity: 0.8;
 
     flex: 50%;
     text-align: left;
+
+
     
   }
 
@@ -100,19 +102,12 @@ opacity: 0.8;
     margin-right: auto;
     padding-bottom: 4%;
   }
-#navigation{
-    height:50px;
-    width: 1920px;
-    background-color: rgb(255, 255, 255);
-    box-shadow:  6px 5px 22px #00000050;;
-    
-}
 #hamburger {
     width: 60px;
-    height: 15px;
+    height: 45px;
     position: absolute;
     top: 1rem;
-    left: 4rem;
+    left: 1rem;
     z-index: 99;
     cursor: pointer;
     transform: scale(0.8);
@@ -121,10 +116,10 @@ opacity: 0.8;
 #hamburger span{
     display: block;
     position: absolute;
-    height: 4px;
+    height: 9px;
     width: 100%;
-    background: rgb(0, 0, 0);
-    border-radius: 0px;
+    background: rgb(243, 91, 3);
+    border-radius: 9px;
     left: 0;
     transform: rotate(0deg);
     transition: .25s ease-in-out;
@@ -157,18 +152,14 @@ opacity: 0.8;
 #hamburger.open span:nth-child(3){
     transform: rotate(-45deg);
 }
-#navigationbar{
-    height: 50%;
-    width: 1080px;
-    background-color: blueviolet;
-}
+
 nav {
     position: absolute;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     z-index: 50;
-    background: rgba(110, 109, 109, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     user-select: none;
     display: none;
 }
@@ -196,7 +187,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #bbb;
 }
 
 nav a:hover {
@@ -337,12 +328,3 @@ nav a:hover {
 .fa-twitter {
 	color: black;
 }
-
-/* #content-wrap form{
-    color: #000000;
-} */
-
-#content-wrap ::placeholder{
-    color: #000000;
-}
-
