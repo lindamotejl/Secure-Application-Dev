@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
-    'crispy_forms',
+    "crispy_forms",
     # social providers
     "allauth.socialaccount.providers.google",
     # own
