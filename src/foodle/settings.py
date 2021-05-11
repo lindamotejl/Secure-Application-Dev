@@ -169,3 +169,5 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 crispy_template_pack = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'home'
