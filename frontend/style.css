@@ -46,17 +46,6 @@
 
 }
 
-.search {
-position: absolute;
-left: 30%;
-right: 30%;
-top: 76%;
-bottom: 17.5%;
-
-background: rgba(5, 5, 5, 0.9);
-opacity: 0.8;
-}
-
 #about{
     height: 200px;
     width: 100%;
@@ -101,7 +90,7 @@ opacity: 0.8;
     padding-bottom: 4%;
   }
 #navigation{
-    height:50px;
+    height:70px;
     width: 1920px;
     background-color: rgb(255, 255, 255);
     box-shadow:  6px 5px 22px #00000050;;
@@ -112,7 +101,7 @@ opacity: 0.8;
     height: 15px;
     position: absolute;
     top: 1rem;
-    left: 4rem;
+    left: 7.5rem;
     z-index: 99;
     cursor: pointer;
     transform: scale(0.8);
@@ -206,13 +195,13 @@ nav a:hover {
 #login, #signup {
     height: 42px;
     position: absolute;
-    top: 1rem;
-    right: 4.8rem;
+    top: 0.8rem;
+    right: 8.8rem;
     z-index: 99;
 }
 
 #login {
-    right: 10.5rem;
+    right: 16.5rem;
 }
 
 #login a {
@@ -342,7 +331,28 @@ nav a:hover {
     color: #000000;
 } */
 
-#content-wrap ::placeholder{
+/* #content-wrap ::placeholder{
     color: #000000;
+} */
+
+#more {
+    position: absolute;
+width: 272px;
+height: 60px;
+left: 852px;
+top: 768px;
+
+background: rgba(203, 66, 19, 0.93);
+box-shadow: 2px 3px 10px 10px rgba(0, 0, 0, 0.5);
+border-radius: 100px;
 }
 
+#more a {
+    display: block;
+    line-height: 42px;
+    padding: 0 12px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
