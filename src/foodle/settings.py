@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
-    "crispy_forms",
     # social providers
     "allauth.socialaccount.providers.google",
     # own
@@ -167,7 +166,5 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
-
-crispy_template_pack = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'home'
