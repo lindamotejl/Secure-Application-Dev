@@ -12,7 +12,7 @@
 #hero {
 	z-index: -1;
 	justify-content: center;
-    display: flex;
+    display:flex;
     overflow: hidden;
 	flex-direction: column;
     position: relative;
@@ -45,6 +45,30 @@
     z-index: 980;
 
 }
+
+.button {
+    z-index: 9999;
+    background-color: #dd4715;
+    text-align: center;
+    border: none;
+    color: rgb(168, 39, 39);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 50px 500px;
+
+    cursor: pointer;
+    border-radius: 50px;
+    width: 272px;
+    height: 60px;
+      
+}
+
+.button a{
+    font-size: 20px;
+    color: #EEEEEE;
+}
+
 
 #about{
     height: 200px;
