@@ -12,11 +12,11 @@
 #hero {
 	z-index: -1;
 	justify-content: center;
-    display: flex;
+    display:flex;
     overflow: hidden;
 	flex-direction: column;
     position: relative;
-	height: 100vh;
+	height: 90vh;
 
 
 
@@ -36,7 +36,7 @@
 	text-align: center;
 	font-family: Montserrat;
 	font-style: normal;
-	color: #fefefe;
+	color: #ffffff;
 	letter-spacing: 1px;
 	font-weight: 500;
 	font-size: 34px;
@@ -46,16 +46,29 @@
 
 }
 
-.search {
-position: absolute;
-left: 30%;
-right: 30%;
-top: 76%;
-bottom: 17.5%;
+.button {
+    z-index: 9999;
+    background-color: #dd4715;
+    text-align: center;
+    border: none;
+    color: rgb(168, 39, 39);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 50px 500px;
 
-background: rgba(238, 238, 238, 0.9);
-opacity: 0.8;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 272px;
+    height: 60px;
+      
 }
+
+.button a{
+    font-size: 20px;
+    color: #EEEEEE;
+}
+
 
 #about{
     height: 200px;
@@ -73,8 +86,6 @@ opacity: 0.8;
 
     flex: 50%;
     text-align: left;
-
-
     
   }
 
@@ -102,12 +113,19 @@ opacity: 0.8;
     margin-right: auto;
     padding-bottom: 4%;
   }
+#navigation{
+    height:70px;
+    width: 1920px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  6px 5px 22px #00000050;;
+    
+}
 #hamburger {
     width: 60px;
-    height: 45px;
+    height: 15px;
     position: absolute;
     top: 1rem;
-    left: 1rem;
+    left: 7.5rem;
     z-index: 99;
     cursor: pointer;
     transform: scale(0.8);
@@ -116,10 +134,10 @@ opacity: 0.8;
 #hamburger span{
     display: block;
     position: absolute;
-    height: 9px;
+    height: 4px;
     width: 100%;
-    background: rgb(243, 91, 3);
-    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border-radius: 0px;
     left: 0;
     transform: rotate(0deg);
     transition: .25s ease-in-out;
@@ -152,14 +170,18 @@ opacity: 0.8;
 #hamburger.open span:nth-child(3){
     transform: rotate(-45deg);
 }
-
+#navigationbar{
+    height: 50%;
+    width: 1080px;
+    background-color: blueviolet;
+}
 nav {
     position: absolute;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     z-index: 50;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(110, 109, 109, 0.9);
     user-select: none;
     display: none;
 }
@@ -187,7 +209,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #bbb;
+    color: rgb(255, 255, 255);
 }
 
 nav a:hover {
@@ -197,13 +219,13 @@ nav a:hover {
 #login, #signup {
     height: 42px;
     position: absolute;
-    top: 1rem;
-    right: 4.8rem;
+    top: 0.8rem;
+    right: 8.8rem;
     z-index: 99;
 }
 
 #login {
-    right: 10.5rem;
+    right: 16.5rem;
 }
 
 #login a {
@@ -214,18 +236,6 @@ nav a:hover {
     color: rgb(0, 0, 0);
     font-weight: 600;
     border-radius: 4px;
-}
-
-#login p {
-  font-size: 16px;
-  color: #000;
-  display: block;
-  line-height: 42px;
-  padding: 0 12px;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-weight: 600;
-  border-radius: 4px;
 }
 
 #signup a {
@@ -341,6 +351,35 @@ nav a:hover {
 	color: black;
 }
 
+/* #content-wrap form{
+    color: #000000;
+} */
+
+/* #content-wrap ::placeholder{
+    color: #000000;
+} */
+
+#more {
+position: absolute;
+width: 272px;
+height: 60px;
+left: 852px;
+top: 768px;
+
+background: rgba(203, 66, 19, 0.93);
+box-shadow: 2px 3px 10px 10px rgba(0, 0, 0, 0.5);
+border-radius: 100px;
+}
+
+#more a {
+    display: block;
+    line-height: 42px;
+    padding: 0 12px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
 .box_login{
     width: 300px;
     padding-top: 0px;
