@@ -1,0 +1,14 @@
+stories:
+ - story: greet and search
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: restaurant_search
+   - action: restaurant_form
+   - active_loop: restaurant_form
+ - story: greet and ask time
+   steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_time
+    - action: action_show_time 
