@@ -8,6 +8,7 @@ conda activate envname
 conda install ujson
 conda install tensorflow
 pip install rasa
+export BOT_API_KEY=<enter API key>
 ```
 then run the chatbot:
 ```
