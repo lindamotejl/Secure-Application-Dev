@@ -1,7 +1,7 @@
 {% load socialaccount %}
 <div id="login">
    {% if user.is_authenticated %}
-   <p>Welcome, {{ user.username }} !</p>
+   <p>Welcome, {{ user.username }}!</p>
    {% else %}
    <a  href="{% url 'login' %}">Login</a>
    {% endif %}
@@ -16,17 +16,34 @@
 
 </div>
 
- <div id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>  
- </div>
- <nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Today's Recommendations</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
- </nav>
+  <div uk-sticky .uk-position-z-index>
+
+<section id="navigation">
+           
+                  <div id="hamburger">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>  
+                  </div>
+                  <nav>
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Today's Recommendations</a></li>
+                        <li><a href="#">Contact</a></li>
+                     </ul>
+                  </nav>
+           
+                  <div id="login">
+                     <a href="#">Login</a>
+                  </div>
+                  <div id="signup">
+                     <a href="#">Signup</a>
+                  </div>
+               
+
+                  
+           </section>
+         </div>
+</div>

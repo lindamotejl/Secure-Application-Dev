@@ -12,7 +12,7 @@
 #hero {
 	z-index: -1;
 	justify-content: center;
-    display: flex;
+    display:flex;
     overflow: hidden;
 	flex-direction: column;
     position: relative;
@@ -46,16 +46,29 @@
 
 }
 
-.search {
-position: absolute;
-left: 30%;
-right: 30%;
-top: 76%;
-bottom: 17.5%;
+.button {
+    z-index: 9999;
+    background-color: #dd4715;
+    text-align: center;
+    border: none;
+    color: rgb(168, 39, 39);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 50px 500px;
 
-background: rgba(5, 5, 5, 0.9);
-opacity: 0.8;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 272px;
+    height: 60px;
+      
 }
+
+.button a{
+    font-size: 20px;
+    color: #EEEEEE;
+}
+
 
 #about{
     height: 200px;
@@ -101,7 +114,7 @@ opacity: 0.8;
     padding-bottom: 4%;
   }
 #navigation{
-    height:50px;
+    height:70px;
     width: 1920px;
     background-color: rgb(255, 255, 255);
     box-shadow:  6px 5px 22px #00000050;;
@@ -112,7 +125,7 @@ opacity: 0.8;
     height: 15px;
     position: absolute;
     top: 1rem;
-    left: 4rem;
+    left: 7.5rem;
     z-index: 99;
     cursor: pointer;
     transform: scale(0.8);
@@ -206,13 +219,13 @@ nav a:hover {
 #login, #signup {
     height: 42px;
     position: absolute;
-    top: 1rem;
-    right: 4.8rem;
+    top: 0.8rem;
+    right: 8.8rem;
     z-index: 99;
 }
 
 #login {
-    right: 10.5rem;
+    right: 16.5rem;
 }
 
 #login a {
@@ -342,7 +355,28 @@ nav a:hover {
     color: #000000;
 } */
 
-#content-wrap ::placeholder{
+/* #content-wrap ::placeholder{
     color: #000000;
+} */
+
+#more {
+    position: absolute;
+width: 272px;
+height: 60px;
+left: 852px;
+top: 768px;
+
+background: rgba(203, 66, 19, 0.93);
+box-shadow: 2px 3px 10px 10px rgba(0, 0, 0, 0.5);
+border-radius: 100px;
 }
 
+#more a {
+    display: block;
+    line-height: 42px;
+    padding: 0 12px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
