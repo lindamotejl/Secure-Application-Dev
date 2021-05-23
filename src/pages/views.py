@@ -1,20 +1,12 @@
-from django.shortcuts import render, redirect
-from users.forms import UserRegisterForm
+from django.shortcuts import render
 
-# Create your views here.
 def home_view(request):
     return render(request, "home.html", {})
 
 def results_view(request):
-    return render(request, "results.html", {})
+    return render(request, "results.html")
 
-def register_view(request):
-    if request.method == 'POST':
-        form = UserRegisterForm(request.POST)
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data.get('username')
-            return redirect('login')
-    else:
-        form = UserRegisterForm()
-    return render(request, 'register.html', {'form': form})
+# def request_page(request):
+#   if(request.GET.get('mybtn')):
+#     response = yelp_api.search_query(categories='restaurants', longitude=14.439893669268018, latitude=50.07851691127118, limit=10) 
+#     return render(request, "results.html", context=response)

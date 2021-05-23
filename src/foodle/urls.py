@@ -1,7 +1,7 @@
 """foodle URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.1/topics/http/urls/
+    https://docs.djangoproject.com/en/3.1/topi  cs/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -14,19 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-from pages.views import home_view, results_view, register_view
-from users import views as user_views
-from django.contrib.auth import views as auth_views
-from users.forms import UserLoginForm
-
+from django.urls import include, path
 
 urlpatterns = [
-    path('', home_view, name='home'),
-    path('results/', results_view, name='results'),
+    path('', include('pages.urls')),
+    path('', include('users.urls')),
     path('admin/', admin.site.urls),
-    path('register/', register_view, name='register'),
-    path('login/', auth_views.LoginView.as_view(template_name='login.html', authentication_form=UserLoginForm), name='login'),
-    path('logout/', auth_views.LogoutView.as_view(template_name='logout.html'), name='logout'),
     path('accounts/', include("allauth.urls")),
 ]
