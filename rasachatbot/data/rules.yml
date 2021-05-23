@@ -12,5 +12,6 @@ rules:
       - action: restaurant_form      # run the form
       - active_loop: null            # the form is no longer active because it has been filled
       - action: action_check_cuisine_and_print  # action to take after the form is complete
+      - action: action_restart       # reset all the slots 
       #- action: utter_submit         
       #- action: utter_slots_values   
