@@ -33,8 +33,6 @@
     z-index: -1;
     }
 
-
-
 .slogan {
 	position: absolute;
 	top: 20%;
@@ -56,14 +54,14 @@
     z-index: 99999999999;
     background-color: #dd4715;
     border: none;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px 10px;
-  cursor: pointer;
-  border-radius: 100px;
-  text-decoration: none !important;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    text-decoration: none !important;
 
 }
 
