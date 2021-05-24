@@ -78,7 +78,6 @@
 .button:hover {
     background-color: #CB4213;
     text-decoration: none !important;
-    color: rgb(54, 49, 119);
   }
 
 .button a:hover {
@@ -87,9 +86,7 @@
   }
 
 
-#buttonpad{
-    padding: 10%;
-}
+
 
 
 
