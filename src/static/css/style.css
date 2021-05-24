@@ -10,7 +10,7 @@
 }
 
 #hero {
-	z-index: -1;
+	z-index: -10;
 	justify-content: center;
     display:flex;
     overflow: hidden;
@@ -25,7 +25,6 @@
 .background{
 	padding-left: 2.5%;
 	padding-right: 2.5%;
-    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -54,27 +53,44 @@
 }
 
 .button {
-    z-index: 9999;
+    z-index: 99999999999;
     background-color: #dd4715;
-    text-align: center;
     border: none;
-    color: rgb(168, 39, 39);
-    padding: 10px 10px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 50px 500px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 100px;
+  text-decoration: none !important;
 
-    cursor: pointer;
-    border-radius: 50px;
-    width: 272px;
-    height: 60px;
-      
 }
 
 .button a{
-    font-size: 20px;
-    color: #EEEEEE;
+    font-size: 18px;
+    color:white;
+    text-decoration: none !important;
+  
+
 }
+
+.button:hover {
+    background-color: #CB4213;
+    text-decoration: none !important;
+    color: rgb(54, 49, 119);
+  }
+
+.button a:hover {
+    text-decoration: none !important;
+    color: rgb(255, 255, 255);
+  }
+
+
+#buttonpad{
+    padding: 10%;
+}
+
 
 
 #about{
