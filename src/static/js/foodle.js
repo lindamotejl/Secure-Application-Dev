@@ -10,6 +10,6 @@ $(document).ready(function () {
 
 $(document).ready(function(){
      $(window).scroll(function(){
-         $("#hero").css("opacity", 1 - $(window).scrollTop() /1500);
+         $("#hero").css("opacity", 1 - $(window).scrollTop() /1200);
      });
  });
