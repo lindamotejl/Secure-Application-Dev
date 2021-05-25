@@ -13,3 +13,10 @@ $(document).ready(function(){
          $("#hero").css("opacity", 1 - $(window).scrollTop() /1200);
      });
  });
+
+ $(document).ready(function() {
+    const heart = document.getElementById('heart');
+    heart.addEventListener('click', function() {
+      heart.classList.toggle('red');
+    });
+  })();

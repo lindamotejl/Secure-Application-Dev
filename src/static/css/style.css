@@ -597,3 +597,14 @@ border-radius: 100px;
     text-align: center;
     color: #dd4715;
 }
+
+#heart {
+    text-align: right;
+    color: grey;  
+    font-size: 20px;
+  }
+  
+  #heart.red {
+    text-align: right;
+    color: red;
+  }
