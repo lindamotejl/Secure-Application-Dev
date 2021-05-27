@@ -51,15 +51,19 @@ class ActionCheckCuisineAndPrint(Action):
         dispatcher.utter_message("All done!\nI am going to run a restaurant search using the following parameters:\n - cuisine:"+ str(csn.lower()) +
         "\n - is_open:"+ str(ispn)+"\n - sorting:"+ srtng+"\n - wheelchair_accessible:"+ whlchr)
 
-        suggestions = make_api_request(csn,ispn,srtng,whlchr)
-
-        for n in suggestions:
-            dispatcher.utter_message(n)
+        try:
+            suggestions = make_api_request(csn,ispn,srtng,whlchr)        
+            for n in suggestions:
+                dispatcher.utter_message(n)
+        except:
+            dispatcher.utter_message("An error occurred, please try again.")
+            return []
+            
         return[]
 
 
 def is_cuisine_valid(cuisine):
-    cuisines = ['czech',"mexican","italian"]
+    cuisines = ['czech','mexican','italian','vegan,','french','german','greek','indian','japanese','korean','turkish','georgian']
     if cuisine.lower() not in cuisines:
         return False
     return True
