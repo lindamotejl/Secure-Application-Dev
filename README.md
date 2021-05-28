@@ -14,10 +14,10 @@ The app works only on a fixed location (Prague College area).
 - [Django](https://www.djangoproject.com)
 - [Yelp Fusion API](https://www.yelp.com/fusion) 
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-- [Heroku](https://www.heroku.com/home) 
+- [PythonAnywhere](https://eu.pythonanywhere.com) 
 
 ## Link to the application
- https://f00dle.herokuapp.com
+http://foodle.eu.pythonanywhere.com
 
 ## Screenshots
 
