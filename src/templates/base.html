@@ -21,8 +21,17 @@
 		<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
 	</head>
 	<body>
-		{% include "navbar.html" %}
 		
+		{% if messages %}
+		{% for message in messages %}
+		  <div class="alert alert-{{ message.tags }}">
+			{{ message }}
+		  </div>
+		{% endfor %}
+	  {% endif %}
+
+		{% include "navbar.html" %}
+
 		{% block content %} {% endblock %}
 
 		{% include "footer.html" %}
