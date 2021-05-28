@@ -17,7 +17,7 @@ The app works only on a fixed location (Prague College area).
 - [PythonAnywhere](https://eu.pythonanywhere.com) 
 
 ## Link to the application
-http://foodle.eu.pythonanywhere.com
+https://anastasiiahoncharuk.eu.pythonanywhere.com/
 
 ## Screenshots
 
@@ -28,10 +28,6 @@ http://foodle.eu.pythonanywhere.com
 ### Results page:
 
 ![Results page](screenshots/results.png)
-
-## Mobile support
-
-Because of responsive desing Foodle is compatible with devices of different screen sizes.
 
 ## Installation
 
