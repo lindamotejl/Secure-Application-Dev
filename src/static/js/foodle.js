@@ -15,8 +15,10 @@ $(document).ready(function(){
  });
 
  $(document).ready(function() {
-    const heart = document.getElementById('heart');
-    heart.addEventListener('click', function() {
-      heart.classList.toggle('red');
-    });
-  })();
+    const heart = document.querySelectorAll(".fa-heart");
+	heart.forEach(heart => {
+  heart.addEventListener('click',  function() {
+    heart.classList.toggle('red');
+  });
+});
+ });

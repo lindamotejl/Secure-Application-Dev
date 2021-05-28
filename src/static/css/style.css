@@ -132,7 +132,7 @@
     padding-bottom: 4%;
   }
 #navigation{
-    height:70px;
+    height:65px;
     width: 1920px;
     background-color: rgb(255, 255, 255);
     box-shadow:  6px 5px 22px #00000050;;
@@ -191,7 +191,6 @@
 #navigationbar{
     height: 50%;
     width: 1080px;
-    background-color: blueviolet;
 }
 nav {
     position: absolute;
@@ -216,13 +215,19 @@ nav ul {
     padding: 0;
     list-style: none;
     text-align: center;
+    font-weight: 500;
+    font-family: Bitter;
+
 }
 
 nav li {
+    font-family: Bitter;
     font-weight: 700;
     font-size: 1.6rem;
-    color: #fff;
+    color: rgb(180, 9, 9);
     margin-bottom: 1.2rem;
+    font-family: Bitter;
+
 }
 
 nav a {
@@ -275,7 +280,7 @@ nav a:hover {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 600;
-    border: 1px solid #f35b03;
+    border: 1.5px solid #DD4815;
     border-radius: 4px;
 }
 
