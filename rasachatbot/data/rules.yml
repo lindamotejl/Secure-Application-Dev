@@ -1,0 +1,17 @@
+rules:
+  - rule: activate restaurant form
+    steps:
+      - intent: request_restaurant   # intent that triggers form activation
+      - action: restaurant_form      # run the form
+      - active_loop: restaurant_form # this form is active  
+
+  - rule: submit form
+    condition:
+    - active_loop: restaurant_form   # this form must be active
+    steps:
+      - action: restaurant_form      # run the form
+      - active_loop: null            # the form is no longer active because it has been filled
+      - action: utter_submit         # action to take after the form is complete
+      - action: action_check_and_print  
+      - action: action_restart       # reset all the slots 
+      
