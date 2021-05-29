@@ -611,3 +611,8 @@ border-radius: 100px;
     text-align: right;
     color: red;
   }
+
+  #paddingcard{
+      margin: auto;
+      width: 50%;
+  }
