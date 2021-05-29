@@ -381,7 +381,7 @@ border-radius: 100px;
     font-weight: 600;
 }
 
-.filter button{
+/* .filter button{
     width: 120px;
     height: 40px;
     background: rgba(196, 196, 196, 0.5);
@@ -396,7 +396,7 @@ border-radius: 100px;
     font-size: 15px;
     letter-spacing: 2px;
     color: #000000;
-}
+} */
 
 p{
     font-family: Montserrat;
@@ -412,7 +412,3 @@ p{
     background-color: rgb(255, 81, 0);
     color: white;
   } */
-
-#filter.orange{
-    color: rgb(255, 81, 0);
-}
