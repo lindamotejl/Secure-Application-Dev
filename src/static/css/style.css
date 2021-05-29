@@ -215,13 +215,13 @@ nav ul {
     padding: 0;
     list-style: none;
     text-align: center;
-    font-weight: 300;
-    font-family: sans-serif;
-
+    font-weight: 100;
+    font-family: Alata;
+    letter-spacing: 2px;
 }
 
 nav li {
-    font-weight: 700;
+    font-weight: 100;
     font-size: 1.6rem;
     color: rgb(180, 9, 9);
     margin-bottom: 1.2rem;
