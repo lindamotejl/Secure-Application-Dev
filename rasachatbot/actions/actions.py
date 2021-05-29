@@ -27,10 +27,10 @@ class ActionShowTime(Action):
 
         return []
 
-class ActionCheckCuisineAndPrint(Action):
+class ActionCheckAndPrint(Action):
 
     def name(self):
-        return "action_check_cuisine_and_print"
+        return "action_check_and_print"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
@@ -47,10 +47,6 @@ class ActionCheckCuisineAndPrint(Action):
         if not is_sorting_valid(srtng):
             dispatcher.utter_message(text="Sorry, but you entered an invalid sorting. Please try something else.")
             return []
-
-        dispatcher.utter_message("All done!\nI am going to run a restaurant search using the following parameters:\n - cuisine:"+ str(csn.lower()) +
-        "\n - is_open:"+ str(ispn)+"\n - sorting:"+ srtng+"\n - wheelchair_accessible:"+ whlchr)
-
         try:
             suggestions = make_api_request(csn,ispn,srtng,whlchr)        
             for n in suggestions:
@@ -58,12 +54,11 @@ class ActionCheckCuisineAndPrint(Action):
         except:
             dispatcher.utter_message("An error occurred, please try again.")
             return []
-            
         return[]
 
 
 def is_cuisine_valid(cuisine):
-    cuisines = ['czech','mexican','italian','vegan,','french','german','greek','indian','japanese','korean','turkish','georgian']
+    cuisines = ['czech','chinese','mexican','italian','vegan,','french','german','greek','indian','japanese','korean','turkish','georgian']
     if cuisine.lower() not in cuisines:
         return False
     return True

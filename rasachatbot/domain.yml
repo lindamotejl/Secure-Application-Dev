@@ -19,11 +19,9 @@ intents:
     use_entities: true
 - ask_time:
     use_entities: true
-
 entities:
 - cuisine
 - sorting
-
 slots:
   cuisine:
     type: rasa.shared.core.slots.TextSlot
@@ -45,7 +43,6 @@ slots:
     initial_value: null
     auto_fill: false
     influence_conversation: false
-
 responses:
   utter_greet:
   - text: Hello, I am FoodleBot! I can help to find a restaurant that meets your demands :) How can I help you?
@@ -61,20 +58,20 @@ responses:
   utter_ask_wheelchair_accessible:
   - text: Last question - do the restaurants need to be wheelchair accessible?
   utter_submit:
-  - text: All done!
-  utter_slots_values:
   - text: |-
+      All done!
       I am going to run a restaurant search using the following parameters:
        - cuisine: {cuisine}
        - is_open: {is_open}
+       - sorting: {sorting}
+       - is_wheelchair_accessible: {wheelchair_accessible}
 actions:
 - utter_greet
 - utter_ask_cuisine
 - utter_ask_is_open
 - utter_ask_sorting
 - utter_submit
-- utter_slots_values
-- action_check_cuisine_and_print
+- action_check_and_print
 - action_show_time
 forms:
   restaurant_form:
@@ -101,4 +98,4 @@ forms:
       - intent: deny
         type: from_intent
         value: false
-
+e2e_actions: []
