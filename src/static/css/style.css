@@ -10,7 +10,7 @@
 }
 
 #hero {
-	z-index: -1;
+	z-index: -10;
 	justify-content: center;
     display:flex;
     overflow: hidden;
@@ -25,9 +25,13 @@
 .background{
 	padding-left: 2.5%;
 	padding-right: 2.5%;
-    
-
-}
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    }
 
 .slogan {
 	position: absolute;
@@ -47,27 +51,41 @@
 }
 
 .button {
-    z-index: 9999;
+    z-index: 99999999999;
     background-color: #dd4715;
-    text-align: center;
     border: none;
-    color: rgb(168, 39, 39);
-    padding: 10px 10px;
+    padding: 10px 30px;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 50px 500px;
-
+    margin: 10px 10px;
     cursor: pointer;
-    border-radius: 50px;
-    width: 272px;
-    height: 60px;
-      
+    border-radius: 100px;
+    text-decoration: none !important;
+
 }
 
 .button a{
-    font-size: 20px;
-    color: #EEEEEE;
+    font-size: 18px;
+    color:white;
+    text-decoration: none !important;
+  
+
 }
+
+.button:hover {
+    background-color: #CB4213;
+    text-decoration: none !important;
+  }
+
+.button a:hover {
+    text-decoration: none !important;
+    color: rgb(255, 255, 255);
+  }
+
+
+
+
 
 
 #about{
@@ -114,7 +132,7 @@
     padding-bottom: 4%;
   }
 #navigation{
-    height:70px;
+    height:65px;
     width: 1920px;
     background-color: rgb(255, 255, 255);
     box-shadow:  6px 5px 22px #00000050;;
@@ -122,7 +140,7 @@
 }
 #hamburger {
     width: 60px;
-    height: 15px;
+    height: 45px;
     position: absolute;
     top: 1rem;
     left: 7.5rem;
@@ -173,7 +191,6 @@
 #navigationbar{
     height: 50%;
     width: 1080px;
-    background-color: blueviolet;
 }
 nav {
     position: absolute;
@@ -198,13 +215,17 @@ nav ul {
     padding: 0;
     list-style: none;
     text-align: center;
+    font-weight: 300;
+    font-family: sans-serif;
+
 }
 
 nav li {
     font-weight: 700;
     font-size: 1.6rem;
-    color: #fff;
+    color: rgb(180, 9, 9);
     margin-bottom: 1.2rem;
+
 }
 
 nav a {
@@ -228,6 +249,18 @@ nav a:hover {
     right: 16.5rem;
 }
 
+#login p {
+    font-size: 16px;
+    color: #000;
+    display: block;
+    line-height: 42px;
+    padding: 0 12px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border-radius: 4px;
+  }
+  
 #login a {
     display: block;
     line-height: 42px;
@@ -245,7 +278,7 @@ nav a:hover {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 600;
-    border: 1px solid #f35b03;
+    border: 1.5px solid #DD4815;
     border-radius: 4px;
 }
 
@@ -561,4 +594,20 @@ border-radius: 100px;
   }
   .loginagain:hover{
     color: #f35b03;
+  }
+
+#filter h2{
+    text-align: center;
+    color: #dd4715;
+}
+
+#heart {
+    text-align: right;
+    color: grey;  
+    font-size: 20px;
+  }
+  
+  #heart.red {
+    text-align: right;
+    color: red;
   }

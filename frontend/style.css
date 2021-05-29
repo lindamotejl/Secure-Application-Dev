@@ -380,3 +380,39 @@ border-radius: 100px;
     color: rgb(0, 0, 0);
     font-weight: 600;
 }
+
+.filter button{
+    width: 120px;
+    height: 40px;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 100px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+/* .active, .btn:hover {
+    background-color: rgb(255, 81, 0);
+    color: white;
+  } */
+
+#filter.orange{
+    color: rgb(255, 81, 0);
+}

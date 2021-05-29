@@ -1,32 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% load static %}
 
-   <head>
-      <!-- About the Page -->
-      <!-- This line is needed for special characters -->
-      <meta charset="utf-8">
-      <!-- This line is needed for platform compatibility -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Foodle</title>
-      <!-- HTML attributes link for css, script for js -->
-      <link rel="stylesheet" href="style.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="jquery.smooth-scroll.min.js"></script>
-      <script src="foodle.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <!-- UIkit CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
-      <!-- UIkit JS -->
-      <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
-
-	  <script src="uikit/dist/js/uikit-icons.min.js"></script>
-
-	  <link rel="stylesheet" href="uikit-3.6.18\css\uikit.css">
-
-
-   </head>
-
+{% block content %}
 
 <div>
 
@@ -36,10 +11,10 @@
 <section>
 
       <div class="title">
-		<h2>Asian Restaurent near Prague College <br> (4 result found)</h2>
+		<h2>Restaurants near Prague College <br> (4 result found)</h2>
       </div>
 
-
+{{ api_response }}
 
       <div class="border">
       </div>
@@ -49,20 +24,16 @@
 </div>
 
 
-
-
-
-
 <div>
 
 
 <div class="uk-text-Left" uk-grid >
 
-    <div class="uk-width-auto">
+    <div class="uk-width-auto" style="width:290px;">
 
 
+		{% comment %} <!-- Hover Start -->
 
-		<!-- Hover Start -->
 
 		<button class="uk-button uk-button-default" style="background-color:#DD4815;" type="button">SORT BY +</button>
 			<div class="uk-width-large" uk-drop>
@@ -133,55 +104,96 @@
 			</div>
 
 
-		<!-- Hover Finish -->
-
-
-
-
-
-
-
-
-
-
-
+		<!-- Hover Finish --> {% endcomment %}
 
 
     </div>
 
 
-    <div class="uk-width-expand" style="margin-right:100px; margin-bottom:35px;">
 
+    <div class="uk-width-expand" style="margin-right:100px; margin-bottom:35px; ">
 
-		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#C1C1C1;" >
-
-			<div class="row" style="height:450px; width:450px; margin-right:0px;">
+		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:850px;" >
+			<div class="row" style="height:350px; width:350px; margin-right:0px;">
 				<div class="uk-card-media-left uk-cover-container">
-					<img src="static/media/pizza.jpg" alt="" uk-cover>
-					<canvas width="600" height="400"></canvas>
+					<img src="{% static "media/pizza.jpg" %}"alt="" uk-cover>
+					<canvas width="350" height="250"></canvas>
+				</div>
+
+			</div>
+
+			<div style="height:230px;" >
+				<div class="uk-card-body" style="background-color:#EFEDEC; margin-left:20px; height:250px;">
+
+					<h3 class="uk-card-title">Thai Restaurent</h3>
+
+					<p> Restaurent Describe <br> sample Text</p>
+
+					<dl class="uk-description-list">
+						<dt>Cusine : Asian</dt>
+
+						<dt>Price Range: $10 - $25</dt>
+
+						<dt>Address : Polska 1459/12 Vinohardy</dt>
+
+					</dl>
+
+					<p uk-margin>
+						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">Daily Menu</button>
+						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">View on Map</button>
+					</p>
+
+
+<div class="uk-position-top-right">
+
+					<i class="fa fa-heart" id="heart" ></i>
+</div>
+        </div>
+
+
+			</div>
+
+		</div>
+
+    </div>
+
+</div>
+
+
+
+<div class="uk-text-Left" uk-grid >
+
+    <div class="uk-width-auto" style="width:290px;">
+
+    </div>
+
+
+
+    <div class="uk-width-expand" style="margin-right:100px; margin-bottom:35px; ">
+
+		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:850px;" >
+
+			<div class="row" style="height:350px; width:350px; margin-right:0px;">
+				<div class="uk-card-media-left uk-cover-container">
+					<img src="{% static "media/pizza.jpg" %}"alt="" uk-cover>
+					<canvas width="350" height="250"></canvas>
 				</div>
 			</div>
 
-			<div style="height:450px;" >
-				<div class="uk-card-body" style="background-color:#C1C1C1; margin-left:50px; height:300px;">
+			<div style="height:230px;" >
+
+				<div class="uk-card-body" style="background-color:#EFEDEC; margin-left:20px; height:250px;">
+
 					<h3 class="uk-card-title">Thai Restaurent</h3>
 					<p> Restaurent Describe <br> sample Text</p>
 
-
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-
-
 					<dl class="uk-description-list">
-						<dt>Cusine</dt>
-						<dd>Asian</dd>
-						<dt>Price Range: </dt>
-						<dd>$10 - $25</dd>
-						<dt>Address</dt>
-						<dd> Polska 1459/12 Vinohardy </dd>
+						<dt>Cusine : Asian</dt>
+
+						<dt>Price Range: $10 - $25</dt>
+
+						<dt>Address : Polska 1459/12 Vinohardy</dt>
+
 					</dl>
 
 
@@ -190,190 +202,133 @@
 						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">View on Map</button>
 					</p>
 
-					<a href="" text-align="right;" uk-icon="heart"></a>
+
+<div class="uk-position-top-right">
+
+					<i class="fa fa-heart" id="heart" ></i>
+</div>
+          </div>
+
+
 				</div>
-			</div>
+
 		</div>
 
-
-
-
-<div class="uk-width-expand" style="margin-right:100px; margin-bottom:35px;">
-
-
-		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#C1C1C1;" >
-
-			<div class="row" style="height:450px; width:450px; margin-right:0px;">
-				<div class="uk-card-media-left uk-cover-container">
-					<img src="static/media/pizza.jpg" alt="" uk-cover>
-					<canvas width="600" height="400"></canvas>
-				</div>
-			</div>
-
-			<div style="height:450px;" >
-				<div class="uk-card-body" style="background-color:#C1C1C1; margin-left:50px; height:300px;">
-					<h3 class="uk-card-title">Thai Restaurent</h3>
-					<p> Restaurent Describe <br> sample Text</p>
-
-
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-
-
-					<dl class="uk-description-list">
-						<dt>Cusine</dt>
-						<dd>Asian</dd>
-						<dt>Price Range: </dt>
-						<dd>$10 - $25</dd>
-						<dt>Address</dt>
-						<dd> Polska 1459/12 Vinohardy </dd>
-					</dl>
-
-
-					<p uk-margin>
-						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">Daily Menu</button>
-						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">View on Map</button>
-					</p>
-
-					<a href="" text-align="right;" uk-icon="heart"></a>
-				</div>
-			</div>
-		</div>
-
-
-
-<div class="uk-width-expand" style="margin-right:100px; margin-bottom:35px;">
-
-
-		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#C1C1C1;" >
-
-			<div class="row" style="height:450px; width:450px; margin-right:0px;">
-				<div class="uk-card-media-left uk-cover-container">
-					<img src="static/media/pizza.jpg" alt="" uk-cover>
-					<canvas width="600" height="400"></canvas>
-				</div>
-			</div>
-
-			<div style="height:450px;" >
-				<div class="uk-card-body" style="background-color:#C1C1C1; margin-left:50px; height:300px;">
-					<h3 class="uk-card-title">Thai Restaurent</h3>
-					<p> Restaurent Describe <br> sample Text</p>
-
-
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-
-
-					<dl class="uk-description-list">
-						<dt>Cusine</dt>
-						<dd>Asian</dd>
-						<dt>Price Range: </dt>
-						<dd>$10 - $25</dd>
-						<dt>Address</dt>
-						<dd> Polska 1459/12 Vinohardy </dd>
-					</dl>
-
-
-					<p uk-margin>
-						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">Daily Menu</button>
-						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">View on Map</button>
-					</p>
-
-					<a href="" text-align="right;" uk-icon="heart"></a>
-				</div>
-			</div>
-		</div>
-
-
-
-<div class="uk-width-expand" style="margin-right:100px; margin-bottom:35px;">
-
-
-		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#C1C1C1;" >
-
-			<div class="row" style="height:450px; width:450px; margin-right:0px;">
-				<div class="uk-card-media-left uk-cover-container">
-					<img src="static/media/pizza.jpg" alt="" uk-cover>
-					<canvas width="600" height="400"></canvas>
-				</div>
-			</div>
-
-			<div style="height:450px;" >
-				<div class="uk-card-body" style="background-color:#C1C1C1; margin-left:50px; height:300px;">
-					<h3 class="uk-card-title">Thai Restaurent</h3>
-					<p> Restaurent Describe <br> sample Text</p>
-
-
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-					<a href="" uk-icon="star"></a>
-
-
-					<dl class="uk-description-list">
-						<dt>Cusine</dt>
-						<dd>Asian</dd>
-						<dt>Price Range: </dt>
-						<dd>$10 - $25</dd>
-						<dt>Address</dt>
-						<dd> Polska 1459/12 Vinohardy </dd>
-					</dl>
-
-
-					<p uk-margin>
-						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">Daily Menu</button>
-						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">View on Map</button>
-					</p>
-
-					<a href="" text-align="right;" uk-icon="heart"></a>
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-    </div>
-
 
 
 </div>
 
 
 
+
+<div class="uk-text-Left" uk-grid >
+
+    <div class="uk-width-auto" style="width:290px;">
+
+    </div>
+
+
+
+    <div class="uk-width-expand" style="margin-right:100px; margin-bottom:35px; ">
+
+		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:850px;" >
+
+			<div class="row" style="height:350px; width:350px; margin-right:0px;">
+				<div class="uk-card-media-left uk-cover-container">
+					<img src="{% static "media/pizza.jpg" %}"alt="" uk-cover>
+					<canvas width="350" height="250"></canvas>
+				</div>
+			</div>
+
+			<div style="height:230px;" >
+
+				<div class="uk-card-body" style="background-color:#EFEDEC; margin-left:20px; height:250px;">
+
+					<h3 class="uk-card-title">Thai Restaurent</h3>
+					<p> Restaurent Describe <br> sample Text</p>
+
+					<dl class="uk-description-list">
+						<dt>Cusine : Asian</dt>
+
+						<dt>Price Range: $10 - $25</dt>
+
+						<dt>Address : Polska 1459/12 Vinohardy</dt>
+
+					</dl>
+
+
+					<p uk-margin>
+						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">Daily Menu</button>
+						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">View on Map</button>
+					</p>
+
+<div class="uk-position-top-right">
+
+					<i class="fa fa-heart" id="heart" ></i>
+</div>
+				</div>
+			</div>
+		</div>
+
+    </div>
+
+
+</div>
+
+
+<div class="uk-text-Left" uk-grid >
+
+    <div class="uk-width-auto" style="width:290px;">
+
+    </div>
+
+
+
+    <div class="uk-width-expand" style="margin-right:100px; margin-bottom:35px; ">
+
+		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:850px;" >
+
+			<div class="row" style="height:350px; width:350px; margin-right:0px;">
+				<div class="uk-card-media-left uk-cover-container">
+					<img src="{% static "media/pizza.jpg" %}"alt="" uk-cover>
+					<canvas width="350" height="250"></canvas>
+				</div>
+			</div>
+
+			<div style="height:230px;" >
+
+				<div class="uk-card-body" style="background-color:#EFEDEC; margin-left:20px; height:250px;">
+					<h3 class="uk-card-title">Thai Restaurent</h3>
+					<p> Restaurent Describe <br> sample Text</p>
+
+					<dl class="uk-description-list">
+						<dt>Cusine : Asian</dt>
+
+						<dt>Price Range: $10 - $25</dt>
+
+						<dt>Address : Polska 1459/12 Vinohardy</dt>
+
+					</dl>
+
+
+					<p uk-margin>
+						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">Daily Menu</button>
+						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">View on Map</button>
+					</p>
+
+<div class="uk-position-top-right">
+
+					<i class="fa fa-heart" id="heart" ></i>
+</div>
+				</div>
+			</div>
+		</div>
+
+    </div>
+
+
+</div>
 
 
 </div>
@@ -388,19 +343,7 @@
 </div>
 
 
-
 </body>
 
 </div>
-
-
-
-
-
-
-<!-- Mirrored from htmldemo.hasthemes.com/ecolife-preview/ecolife/shop-list-left-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 May 2021 04:09:40 GMT -->
-
-
-
-<!-- Mirrored from htmldemo.hasthemes.com/ecolife-preview/ecolife/shop-list-left-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 May 2021 04:09:40 GMT -->
-</html>
+{% endblock %}

@@ -40,13 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "django.contrib.sites",
+    'django.contrib.sites',
     # 3rd party
-    "allauth",
-    "allauth.account",
-    "allauth.socialaccount",
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'yelpapi',
     # social providers
-    "allauth.socialaccount.providers.google",
+    'allauth.socialaccount.providers.google',
     # own
     'pages',
 ]
@@ -59,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'foodle.urls'
@@ -66,7 +68,7 @@ ROOT_URLCONF = 'foodle.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [Path(BASE_DIR, "templates")],
+        'DIRS': [Path(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -90,7 +92,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'foodle',
         'CLIENT': {
-            'host': "mongodb+srv://db_connector:" + urllib.parse.quote_plus('Nl9wcMwKUFgpJC5F') + "@foodle-cluster.vgsnp.mongodb.net/test?retryWrites=true&w=majority"
+            'host': 'mongodb+srv://db_connector:' + urllib.parse.quote_plus('Nl9wcMwKUFgpJC5F') + '@foodle-cluster.vgsnp.mongodb.net/test?retryWrites=true&w=majority'
         }, 
     }
 }
@@ -133,26 +135,26 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = Path(BASE_DIR, 'static')
+STATIC_ROOT = Path(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / 'static',
 ]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = Path(BASE_DIR, '/static/img/')
+MEDIA_ROOT = Path(BASE_DIR, 'static/img')
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
 
 # Django Allauth settings
 AUTHENTICATION_BACKENDS = (
-    "django.contrib.auth.backends.ModelBackend",
-    "allauth.account.auth_backends.AuthenticationBackend",
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
 )
 
 SITE_ID = 3
-ACCOUNT_EMAIL_VERIFICATION = "none"
-LOGIN_REDIRECT_URL = "home"
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+LOGIN_REDIRECT_URL = 'home'
 ACCOUNT_LOGOUT_ON_GET = True
 
 SOCIALACCOUNT_PROVIDERS = {
@@ -166,5 +168,3 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
-
-LOGIN_REDIRECT_URL = 'home'
