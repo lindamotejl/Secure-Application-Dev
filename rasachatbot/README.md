@@ -19,7 +19,7 @@ Assign a temporary environment variable with the export command:
 ```
 export BOT_API_KEY=[your_api_key]
 ```
-where `[your_api_key] ` is your Yelp Fusion API key.
+where `[your_api_key]` is your Yelp Fusion API key.
 ## Starting an action server, loading a trained model and talking to chatbot on the command line.
 Run these command to start an action server:
 ```
@@ -27,4 +27,6 @@ cd Secure-Application-Dev/rasachatbot
 rasa run actions
 ```
 Now when the action endpoint is up and running open a new command line window, cd into rasachatbot directory, activate the virtual environment and use `rasa shell` to talk with the chatbot.
+### Demos
+![Demo1](demos/demo1.gif)
 
