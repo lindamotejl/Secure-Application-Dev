@@ -1,4 +1,9 @@
 [![Django version](https://img.shields.io/badge/Django%20version-3.1.4-blue)](https://www.djangoproject.com)
+![Repo size](https://img.shields.io/github/repo-size/lindamotejl/Secure-Application-Dev)
+[![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fanastasiiahoncharuk.eu.pythonanywhere.com)](https://anastasiiahoncharuk.eu.pythonanywhere.com)
+[![Closed issues](https://img.shields.io/github/issues-closed/lindamotejl/Secure-Application-Dev)](https://github.com/lindamotejl/Secure-Application-Dev/issues?q=is%3Aissue+is%3Aclosed)
+[![Licence](https://img.shields.io/github/license/lindamotejl/Secure-Application-Dev)](https://github.com/lindamotejl/Secure-Application-Dev/blob/main/LICENSE)
+![Last commit](https://img.shields.io/github/last-commit/lindamotejl/Secure-Application-Dev)
 
 # Foodle
 
