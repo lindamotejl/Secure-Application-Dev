@@ -58,7 +58,7 @@ class ActionCheckAndPrint(Action):
 
 
 def is_cuisine_valid(cuisine):
-    cuisines = ['czech','chinese','mexican','italian','vegan,','french','german','greek','indian','japanese','korean','turkish','georgian']
+    cuisines = ['czech','chinese','mexican','italian','vegan','french','german','greek','indian','japanese','korean','turkish','georgian']
     if cuisine.lower() not in cuisines:
         return False
     return True
