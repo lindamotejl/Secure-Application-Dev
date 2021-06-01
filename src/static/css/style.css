@@ -237,18 +237,19 @@ nav a:hover {
     color: #fff;
 }
 
-#login, #signup {
+#login, #signup, #bot {
     height: 42px;
     position: absolute;
     top: 0.8rem;
-    right: 8.8rem;
     z-index: 99;
 }
 
 #login {
-    right: 16.5rem;
+  right: 19.5rem;
 }
-
+#signup {
+  right: 13rem;
+ }
 #login p {
     font-size: 16px;
     color: #000;
@@ -688,3 +689,21 @@ border-radius: 100px;
 			  background-color: rgb(255, 102, 0);
 			  color: white;
 			}
+
+      #bot {
+        right: 4.5rem;
+      }
+    
+    #bot a {
+        display: block;
+        line-height: 42px;
+        padding: 0 12px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        border-radius: 4px;
+        border: 1px solid #f35b03;
+        background-color: #f35b03;
+
+
+    }
