@@ -225,7 +225,11 @@ nav a:hover {
 }
 
 #login {
-    right: 16.5rem;
+    right: 19.5rem;
+}
+
+#signup {
+    right: 13rem;
 }
 
 #login a {
@@ -414,7 +418,7 @@ p{
   } */
 
 #bot {
-    right: 22.5rem;
+    right: 4.5rem;
 }
 
 #bot a {
@@ -422,7 +426,9 @@ p{
     line-height: 42px;
     padding: 0 12px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 600;
     border-radius: 4px;
+    border: 1px solid #f35b03;
+    background-color: #f35b03;
 }
