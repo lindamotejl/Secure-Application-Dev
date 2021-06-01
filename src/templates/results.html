@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
 
 <div>
@@ -24,8 +23,147 @@
 </div>
 
 
-<div>
+<div class="uk-container"-->
 
+<style>
+			/* Style the buttons */
+			.btn {
+				width: 120px;
+    			height: 40px;
+    			background: rgba(196, 196, 196, 0.5);
+    			border-radius: 100px;
+    			text-decoration: none;
+    			text-align: center;
+    			cursor: pointer;
+    			border: none;
+
+    			font-family: Montserrat;
+    			font-weight: 500;
+    			font-size: 15px;
+    			letter-spacing: 2px;
+    			color: #000000;
+			}
+			
+			/* Style the active class, and buttons on mouse-over */
+			.active, .btn:hover {
+			  background-color: rgb(221, 72, 22);;
+			  color: white;
+			}
+
+			.btn2 {
+				width: 120px;
+    			height: 40px;
+    			background: rgba(196, 196, 196, 0.5);
+    			border-radius: 100px;
+    			text-decoration: none;
+    			text-align: center;
+    			cursor: pointer;
+    			border: none;
+
+    			font-family: Montserrat;
+    			font-weight: 500;
+    			font-size: 15px;
+    			letter-spacing: 2px;
+    			color: #000000;
+			}
+			
+			/* Style the active class, and buttons on mouse-over */
+			.active, .btn2:hover {
+			  background-color: rgb(221, 72, 22);
+			  color: white;
+			}
+
+			.btn3 {
+				width: 120px;
+    			height: 40px;
+    			background: rgba(196, 196, 196, 0.5);
+    			border-radius: 100px;
+    			text-decoration: none;
+    			text-align: center;
+    			cursor: pointer;
+    			border: none;
+
+    			font-family: Montserrat;
+    			font-weight: 500;
+    			font-size: 15px;
+    			letter-spacing: 2px;
+    			color: #000000;
+			}
+			
+			/* Style the active class, and buttons on mouse-over */
+			.active, .btn3:hover {
+			  background-color: rgb(221, 72, 22);
+			  color: white;
+
+			
+			}
+		</style>
+	</head>
+	<body>
+
+		<p>CUISINE</p>
+
+		<div id="myDIV" class="filter">
+			<button id="fill" class="btn" style="margin-right: 5px;">Asian</button>
+			<button id="fill" class="btn" style="margin-right: 5px;">Italian</button>
+			<button id="fill" class="btn" style="margin-right: 5px;">Indian</button>
+			<button id="fill" class="btn" style="margin-right: 5px;">Czech</button>
+		</div>
+
+		<p>PRICE RANGE</p>
+		<div id="myDIV2" class="filter">
+			<button id="fill" class="btn2" style="margin-right: 5px;">$</button>
+			<button id="fill" class="btn2" style="margin-right: 5px;">$$</button>
+			<button id="fill" class="btn2" style="margin-right: 5px;">$$$</button>
+			<button id="fill" class="btn2" style="margin-right: 5px;">$$$$</button>
+		</div>
+
+		<p>DIETARY RESTRICTIONS</p>
+		<div id="myDIV3" class="filter">
+			<button id="fill" class="btn3" style="margin-right: 5px;">Vegetarian</button>
+			<button id="fill" class="btn3" style="margin-right: 5px;">Vegan</button>
+		</div>
+
+		  <script>
+		  // Add active class to the current button (highlight it)
+		  var header = document.getElementById("myDIV");
+		  var btns = header.getElementsByClassName("btn");
+		  for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			if (current.length > 0) { 
+			  current[0].className = current[0].className.replace(" active", "");
+			}
+			this.className += " active";
+			});
+		  }
+
+		  var header = document.getElementById("myDIV2");
+		  var btns2 = header.getElementsByClassName("btn2");
+		  for (var i = 0; i < btns2.length; i++) {
+			btns2[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			if (current.length > 0) { 
+			  current[0].className = current[0].className.replace(" active", "");
+			}
+			this.className += " active";
+			});
+		  }
+
+		  var header = document.getElementById("myDIV3");
+		  var btns3 = header.getElementsByClassName("btn3");
+		  for (var i = 0; i < btns3.length; i++) {
+			btns3[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			if (current.length > 0) { 
+			  current[0].className = current[0].className.replace(" active", "");
+			}
+			this.className += " active";
+			});
+		  }
+		  </script>
+		  <div class="space"></div>
+</div>
 
 
     <!--div class="uk-width-auto" style="width:290px;"-->
@@ -105,11 +243,13 @@
 
 		<!-- Hover Finish --> {% endcomment %}
 
-<div class="uk-container">
+<div class="uk-container"-->
+
+<div class="result-one">
+    <div class="uk-width-auto" style="width:290px;">
 
 
-
-		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:850px;" >
+		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:950px;" >
 			<div class="row" style="height:350px; width:350px; margin-right:0px;">
 				<div class="uk-card-media-left uk-cover-container">
 					<img src="{% static "media/pizza.jpg" %}"alt="" uk-cover>
@@ -150,32 +290,28 @@
 
 			</div>
 
-
+	</div>
     </div>
+</div>
+
+<div class="result-two">
+    <div class="uk-width-auto" style="width:290px;">
 
 
-
-    <!--div class="uk-width-auto" style="width:400px;"-->
-
-
-
-
-    <div class="uk-width-expand" style="margin-right:100px; margin-bottom:35px; ">
-
-		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:850px;" >
-
+		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:950px;" >
 			<div class="row" style="height:350px; width:350px; margin-right:0px;">
 				<div class="uk-card-media-left uk-cover-container">
 					<img src="{% static "media/pizza.jpg" %}"alt="" uk-cover>
 					<canvas width="350" height="250"></canvas>
 				</div>
+
 			</div>
 
 			<div style="height:230px;" >
-
 				<div class="uk-card-body" style="background-color:#EFEDEC; margin-left:20px; height:250px;">
 
 					<h3 class="uk-card-title">Thai Restaurent</h3>
+
 					<p> Restaurent Describe <br> sample Text</p>
 
 					<dl class="uk-description-list">
@@ -186,7 +322,6 @@
 						<dt>Address : Polska 1459/12 Vinohardy</dt>
 
 					</dl>
-
 
 					<p uk-margin>
 						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">Daily Menu</button>
@@ -195,47 +330,38 @@
 
 
 					<div class="uk-position-top-right">
-
-										<i class="fa fa-heart" id="heart" ></i>
+						<i class="fa fa-heart" id="heart" ></i>
 					</div>
-          </div>
+					
+					
+					</div>
 
 
-				</div>
+			</div>
 
-		</div>
-
+	</div>
     </div>
 
+</div>
+
+ <div class="result-three">
+    <div class="uk-width-auto" style="width:290px;">
 
 
-
-
-
-	<div class="uk-text-Left" uk-grid >
-
-    <!--div class="uk-width-auto" style="width:290px;"-->
-
-    </div>
-
-
-
-    <div class="uk-width-expand" style="margin-right:100px; margin-bottom:35px; ">
-
-		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:850px;" >
-
+		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:950px;" >
 			<div class="row" style="height:350px; width:350px; margin-right:0px;">
 				<div class="uk-card-media-left uk-cover-container">
 					<img src="{% static "media/pizza.jpg" %}"alt="" uk-cover>
 					<canvas width="350" height="250"></canvas>
 				</div>
+
 			</div>
 
 			<div style="height:230px;" >
-
 				<div class="uk-card-body" style="background-color:#EFEDEC; margin-left:20px; height:250px;">
 
 					<h3 class="uk-card-title">Thai Restaurent</h3>
+
 					<p> Restaurent Describe <br> sample Text</p>
 
 					<dl class="uk-description-list">
@@ -247,50 +373,45 @@
 
 					</dl>
 
-
 					<p uk-margin>
 						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">Daily Menu</button>
 						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">View on Map</button>
 					</p>
 
-			<div class="uk-position-top-right">
 
-								<i class="fa fa-heart" id="heart" ></i>
+					<div class="uk-position-top-right">
+						<i class="fa fa-heart" id="heart" ></i>
+					</div>
+					
+					
+					</div>
+
+
 			</div>
-				</div>
-			</div>
-		</div>
 
+	</div>
     </div>
+</div>
 
 
+    <div class="result-four">
+    <div class="uk-width-auto" style="width:290px;">
 
 
-
-
-	<div class="uk-text-Left" uk-grid >
-
-    <!--div class="uk-width-auto" style="width:290px;"-->
-
-    </div>
-
-
-
-    <div class="uk-width-expand" style="margin-right:100px; margin-bottom:35px; ">
-
-		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:850px;" >
-
+		<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background-color:#EFEDEC; width:950px;" >
 			<div class="row" style="height:350px; width:350px; margin-right:0px;">
 				<div class="uk-card-media-left uk-cover-container">
 					<img src="{% static "media/pizza.jpg" %}"alt="" uk-cover>
 					<canvas width="350" height="250"></canvas>
 				</div>
+
 			</div>
 
 			<div style="height:230px;" >
-
 				<div class="uk-card-body" style="background-color:#EFEDEC; margin-left:20px; height:250px;">
+
 					<h3 class="uk-card-title">Thai Restaurent</h3>
+
 					<p> Restaurent Describe <br> sample Text</p>
 
 					<dl class="uk-description-list">
@@ -302,27 +423,33 @@
 
 					</dl>
 
-
 					<p uk-margin>
 						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">Daily Menu</button>
 						<button class="uk-button uk-button-danger" style="background-color:#DD4815;">View on Map</button>
 					</p>
 
-			<div class="uk-position-top-right">
 
-								<i class="fa fa-heart" id="heart" ></i>
-			</div>
-				</div>
-			</div>
-		</div>
+					<div class="uk-position-top-right">
+						<i class="fa fa-heart" id="heart" ></i>
+					</div>
+					
+					
+					</div>
 
+
+			</div>
+
+	</div>
     </div>
+</div>
+
 
 
 </div>
 </div>
 </div>
 
+</div>
 
 
 
