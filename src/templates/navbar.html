@@ -1,0 +1,43 @@
+{% load static %}
+{% load socialaccount %}
+
+<div uk-sticky .uk-position-z-index>
+   <section id="navigation">
+           
+      <div id="hamburger">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>  
+      </div>
+      <nav>
+         <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#recommended">Today's Recommendations</a></li>
+            <li><a href="{% url 'results' %}">All Restaurants</a></li>
+            <li><a href="#flex-wrapper">Contact</a></li>
+         </ul>
+      </nav>
+
+      <div id="login">
+         {% if user.is_authenticated %}
+         <p>Welcome, {{ user.username }}!</p>
+         {% else %}
+         <a  href="{% url 'login' %}">Login</a>
+         {% endif %}
+      </div>
+      <div id="signup">
+         {% if user.is_authenticated %}
+         <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+         {% else %}
+         <a href="{% url 'register' %}">Signup</a> 
+         {% endif %}
+      </div>  
+      <div id="bot">
+         <a href="https://github.com/anastasiia724/FoodleBot">FoodleBot</a>
+      </div>
+
+             
+   </section>
+</div>

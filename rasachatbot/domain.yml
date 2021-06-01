@@ -1,0 +1,101 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
+intents:
+- greet:
+    use_entities: true
+- restaurant_search:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- inform:
+    use_entities: true
+- request_restaurant:
+    use_entities: true
+- ask_time:
+    use_entities: true
+entities:
+- cuisine
+- sorting
+slots:
+  cuisine:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: false
+    influence_conversation: false
+  is_open:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: false
+    influence_conversation: false
+  sorting:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: false
+    influence_conversation: false
+  wheelchair_accessible:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: false
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hello, I am FoodleBot! I can help to find a restaurant that meets your demands :) How can I help you?
+  utter_ask_cuisine:
+  - text: Let me find a perfect restaurant for you! What cuisine do you prefer?
+  - text: Let's start then! Tell me, what cuisine would you like?
+  utter_ask_is_open:
+  - text: Are you looking only for {cuisine} restaurants that are open right now?
+  - text: I see... Do you want to search only for {cuisine} restaurants that are open right now?
+  utter_ask_sorting:
+  - text: Almost done! How to you want me to sort the restaurants? The results can be sorted by best match, rating or review count.
+  - text: Alright, how should I sort the restaurants? (best match, review count, rating)
+  utter_ask_wheelchair_accessible:
+  - text: Last question - do the restaurants need to be wheelchair accessible?
+  utter_submit:
+  - text: |-
+      All done!
+      I am going to run a restaurant search using the following parameters:
+       - cuisine: {cuisine}
+       - is_open: {is_open}
+       - sorting: {sorting}
+       - is_wheelchair_accessible: {wheelchair_accessible}
+actions:
+- utter_greet
+- utter_ask_cuisine
+- utter_ask_is_open
+- utter_ask_sorting
+- utter_submit
+- action_check_and_print
+- action_show_time
+forms:
+  restaurant_form:
+    ignored_intents:
+    - greet
+    required_slots:
+      cuisine:
+      - entity: cuisine
+        type: from_entity
+      is_open:
+      - intent: affirm
+        type: from_intent
+        value: true
+      - intent: deny
+        type: from_intent
+        value: false
+      sorting:
+      - entity: sorting
+        type: from_entity
+      wheelchair_accessible:
+      - intent: affirm
+        type: from_intent
+        value: true
+      - intent: deny
+        type: from_intent
+        value: false
+e2e_actions: []

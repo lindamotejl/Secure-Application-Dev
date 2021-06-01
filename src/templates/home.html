@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+ <section id="web">
+        
+            </section>
+            <section id="hero">
+                 <div id="hero-mask"></div>
+               <img src="{% static 'media/restaurant.jpg' %}" class="background" alt="Background image"-->            
+            <div class="slogan">GOOD FOOD STARTS HERE</div>
+               </div>
+
+ 
+
+                 </section>
+
+     <div class="uk-position-bottom-center">
+            <div class="button"><a href="{% url 'results' %}">View all restaurants</a></div>
+       </div>
+
+      <section id="about">
+      <div class="row">
+      <div class="column">
+      <img src="{% static 'media/resized.png' %}" alt="logo" class="centerlogo">
+      </div>
+      <div class="column">
+      <h1>About Us</h1>
+      <p>We help you find the perfect restaurant for you next breakfast, lunch or dinner. Thanks to our advanced filtering systems and smart Chatbot, you will have no problems choosing your next meal.</p>
+      </div>
+      </div>
+      </section>
+      <section id="recommended">
+      <div class="title">
+      <h2>Today's Recommendations</h2>
+      </div>
+      <div class="border">
+      </div>
+      <div class="space">
+      </div>
+      <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+      <div>
+      <div class="uk-card uk-card-default">
+      <div class="uk-card uk-card-hover">
+      <div class="uk-card-media-top">
+      <img src="https://s3-media4.fl.yelpcdn.com/bphoto/RKEa7dz0vs0vKsor6lvLrg/o.jpg" alt="food">
+      </div>
+      <div class="uk-card-body">
+      <h3 class="uk-card-title">Restaurace Pastička</h3>
+      <p>Blanická 922/25, 120 00 Prague</p>
+					<i class="fa fa-heart" id="heart" ></i>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div>
+      <div class="uk-card uk-card-default">
+      <div class="uk-card uk-card-hover">
+      <div class="uk-card-media-top">
+      <img src="https://s3-media1.fl.yelpcdn.com/bphoto/P_4UmyIbpyZehQqrNSbTxg/o.jpg" alt="food">
+      </div>
+      <div class="uk-card-body">
+      <h3 class="uk-card-title">Celebrity Cafe</h3>
+      <p>Vinohradská 1789/40, 120 00 Prague</p>
+		<i class="fa fa-heart" id="heart" ></i>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div>
+      <div class="uk-card uk-card-default">
+      <div class="uk-card uk-card-hover">
+      <div class="uk-card-media-top">
+      <img src="https://s3-media1.fl.yelpcdn.com/bphoto/Mm5WIhqJKaHnpWBB80370g/o.jpg" alt="food">
+      </div>
+      <div class="uk-card-body">
+      <h3 class="uk-card-title">WingHaus</h3>
+      <p>Vinohradská 1215/31, 120 00 Prague</p>
+					<i class="fa fa-heart" id="heart" ></i>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      {% if user.is_authenticated %}
+      <div class="title">
+      <h2>My Favourites</h2>
+      </div>
+      <div class="border2">
+      </div>
+      <div class="space">
+      </div>
+      <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+      <div>
+      <div class="uk-card uk-card-default">
+      <div class="uk-card uk-card-hover">
+      <div class="uk-card-media-top">
+      <img src="{% static 'media/pizza.jpg' %}" alt="food">
+      </div>
+      <div class="uk-card-body">
+      <h3 class="uk-card-title">Media Top</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+					<i class="fa fa-heart" id="heart" ></i>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div>
+      <div class="uk-card uk-card-default">
+      <div class="uk-card uk-card-hover">
+      <div class="uk-card-media-top">
+      <div class="uk-card uk-card-hover">
+      <img src="{% static 'media/pizza.jpg' %}" alt="food">
+      </div>
+      <div class="uk-card-body">
+      <h3 class="uk-card-title">Media Top</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+					<i class="fa fa-heart" id="heart" ></i>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div>
+      <div class="uk-card uk-card-default">
+      <div class="uk-card uk-card-hover">
+      <div class="uk-card-media-top">
+      <img src="{% static 'media/pizza.jpg' %}" alt="food">
+      </div>
+      <div class="uk-card-body">
+      <h3 class="uk-card-title">Media Top</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+					<i class="fa fa-heart" id="heart" ></i>
+      </div>
+      {% else %}
+      {% endif %}
+      
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+	</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,63 @@
+version: "2.0"
+nlu:
+- intent: affirm
+  examples: |
+    - Yes
+    - yes, please
+    - yup
+    - sure
+    - yeah
+    - ok
+    - agree
+    - yep
+    - okay
+- intent: deny
+  examples: |
+    - no don't
+    - no
+    - no I don't want that
+    - nope
+    - nah
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - howdy
+    - good morning
+    - good afternoon
+    - good evening
+- intent: inform
+  examples: |
+    - [czech](cuisine) food
+    - i wanna [italian](cuisine) food
+    - how bout [japanese](cuisine)
+    - what about [indian](cuisine) food
+    - uh how about [turkish](cuisine) type of food
+    - [mexican](cuisine)
+    - im looking for [greek](cuisine) food
+    - id like [moroccan](cuisine) cuisine
+    - okay I want [Czech](cuisine) food then
+    - [best match](sorting) would be ok
+    - sort it by [rating](sorting) please
+    - [best match](sorting)
+    - you should sort it by [review count](sorting)
+    - im [vegan](cuisine)
+    - [french](cuisine)
+    - [german](cuisine)
+    - [korean](cuisine) cuisine
+    - i want [georgian](cuisine)
+- intent: restaurant_search
+  examples: |
+    - im hungry
+    - im starving
+    - im looking for a restaurant
+    - can i get [swedish](cuisine) food in any area
+    - a restaurant that serves [caribbean](cuisine) food
+    - id like a restaurant
+    - im looking for a restaurant that serves [french](cuisine) food
+    - can i find a restaurant that serves [chinese](cuisine)
+    - where can i have lunch?
+    - do you know any fine places to eat?
+- intent: ask_time
+  examples: |
+    - what time is it

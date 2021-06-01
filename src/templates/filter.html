@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<style>
+			/* Style the buttons */
+			.btn {
+				width: 120px;
+    			height: 40px;
+    			background: rgba(196, 196, 196, 0.5);
+    			border-radius: 100px;
+    			text-decoration: none;
+    			text-align: center;
+    			cursor: pointer;
+    			border: none;
+
+    			font-family: Montserrat;
+    			font-weight: 500;
+    			font-size: 15px;
+    			letter-spacing: 2px;
+    			color: #000000;
+			}
+			
+			/* Style the active class, and buttons on mouse-over */
+			.active, .btn:hover {
+			  background-color: rgb(255, 102, 0);
+			  color: white;
+			}
+
+			.btn2 {
+				width: 120px;
+    			height: 40px;
+    			background: rgba(196, 196, 196, 0.5);
+    			border-radius: 100px;
+    			text-decoration: none;
+    			text-align: center;
+    			cursor: pointer;
+    			border: none;
+
+    			font-family: Montserrat;
+    			font-weight: 500;
+    			font-size: 15px;
+    			letter-spacing: 2px;
+    			color: #000000;
+			}
+			
+			/* Style the active class, and buttons on mouse-over */
+			.active, .btn2:hover {
+			  background-color: rgb(255, 102, 0);
+			  color: white;
+			}
+
+			.btn3 {
+				width: 120px;
+    			height: 40px;
+    			background: rgba(196, 196, 196, 0.5);
+    			border-radius: 100px;
+    			text-decoration: none;
+    			text-align: center;
+    			cursor: pointer;
+    			border: none;
+
+    			font-family: Montserrat;
+    			font-weight: 500;
+    			font-size: 15px;
+    			letter-spacing: 2px;
+    			color: #000000;
+			}
+			
+			/* Style the active class, and buttons on mouse-over */
+			.active, .btn3:hover {
+			  background-color: rgb(255, 102, 0);
+			  color: white;
+			}
+		</style>
+	</head>
+	<body>
+
+		<p>CUISINE</p>
+
+		<div id="myDIV" class="filter">
+			<button id="fill" class="btn" style="margin-right: 5px;">Asian</button>
+			<button id="fill" class="btn" style="margin-right: 5px;">Italian</button>
+			<button id="fill" class="btn" style="margin-right: 5px;">Indian</button>
+			<button id="fill" class="btn" style="margin-right: 5px;">Czech</button>
+		</div>
+
+		<p>PRICE RANGE</p>
+		<div id="myDIV2" class="filter">
+			<button id="fill" class="btn2" style="margin-right: 5px;">$</button>
+			<button id="fill" class="btn2" style="margin-right: 5px;">$$</button>
+			<button id="fill" class="btn2" style="margin-right: 5px;">$$$</button>
+			<button id="fill" class="btn2" style="margin-right: 5px;">$$$$</button>
+		</div>
+
+		<p>DIETARY RESTRICTIONS</p>
+		<div id="myDIV3" class="filter">
+			<button id="fill" class="btn3" style="margin-right: 5px;">Vegetarian</button>
+			<button id="fill" class="btn3" style="margin-right: 5px;">Vegan</button>
+		</div>
+
+		  <script>
+		  // Add active class to the current button (highlight it)
+		  var header = document.getElementById("myDIV");
+		  var btns = header.getElementsByClassName("btn");
+		  for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			if (current.length > 0) { 
+			  current[0].className = current[0].className.replace(" active", "");
+			}
+			this.className += " active";
+			});
+		  }
+
+		  var header = document.getElementById("myDIV2");
+		  var btns2 = header.getElementsByClassName("btn2");
+		  for (var i = 0; i < btns2.length; i++) {
+			btns2[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			if (current.length > 0) { 
+			  current[0].className = current[0].className.replace(" active", "");
+			}
+			this.className += " active";
+			});
+		  }
+
+		  var header = document.getElementById("myDIV3");
+		  var btns3 = header.getElementsByClassName("btn3");
+		  for (var i = 0; i < btns3.length; i++) {
+			btns3[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			if (current.length > 0) { 
+			  current[0].className = current[0].className.replace(" active", "");
+			}
+			this.className += " active";
+			});
+		  }
+		  </script>
+		
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
